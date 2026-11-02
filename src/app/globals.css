@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FAFAF9;
+  --surface: #FFFFFF;
+  --surface-muted: #F4F4F2;
+  --border: #E7E7E4;
+  --text: #0B0B0F;
+  --text-muted: #5B5B66;
+  --accent: #4F46E5;
+  --accent-soft: #EEF0FF;
+  --success: #16A34A;
+  --danger: #DC2626;
+  --warning: #D97706;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #CFE6FF 0%, #E6E3FF 50%, #FBE3EC 100%);
+}
+
+.glass-frame {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-card {
+  box-shadow: 0 1px 2px rgba(11, 11, 15, 0.04), 0 8px 24px rgba(11, 11, 15, 0.06);
+}
+
+.shadow-btn {
+  box-shadow: 0 6px 16px rgba(11, 11, 15, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
