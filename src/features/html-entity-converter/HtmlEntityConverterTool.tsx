@@ -101,3 +101,4 @@ export const HtmlEntityConverterTool: React.FC = () => {
     </div>
   );
 };
+

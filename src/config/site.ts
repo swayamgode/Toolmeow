@@ -5,7 +5,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://toolmeow.com',
   author: 'ToolMeow Team',
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'support@toolmeow.com',
-  adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || '',
+  adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-3027613620365055',
   locale: 'en_IN',
   navItems: [
     { label: 'All Tools', href: '/tools' },
