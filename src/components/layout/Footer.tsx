@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Layers, ShieldCheck, Zap, Lock } from 'lucide-react';
+import { ShieldCheck, Zap, Lock } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { CATEGORIES } from '@/config/categories';
 
@@ -46,10 +46,11 @@ export const Footer: React.FC = () => {
         <div className="col-span-2 space-y-4">
           <Link
             href="/"
-            className="flex items-center gap-2 font-bold text-base text-[#0B0B0F]"
+            className="flex items-center gap-2 font-bold text-base text-[#0B0B0F] group"
           >
-            <div className="w-7 h-7 rounded-md bg-[#4F46E5] flex items-center justify-center text-white">
-              <Layers className="w-4 h-4" />
+            <div className="w-7 h-7 rounded-md overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/icon.svg" alt="ToolMeow Logo" width={28} height={28} className="w-full h-full object-contain" />
             </div>
             <span>{siteConfig.name}</span>
           </Link>

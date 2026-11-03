@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Layers, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { ToolSearch } from '@/components/tools/ToolSearch';
 
@@ -15,11 +15,12 @@ export const Header: React.FC = () => {
         {/* Brand Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 font-extrabold text-xl text-[#0B0B0F] hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4F46E5] rounded-lg tracking-tight"
+          className="flex items-center gap-2.5 font-extrabold text-xl text-[#0B0B0F] hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4F46E5] rounded-lg tracking-tight group"
           aria-label={`${siteConfig.name} Home`}
         >
-          <div className="w-8 h-8 rounded-lg bg-[#0B0B0F] flex items-center justify-center text-white shadow-sm">
-            <Layers className="w-4 h-4 text-white" />
+          <div className="w-8 h-8 rounded-lg shadow-sm overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/icon.svg" alt="ToolMeow Logo" width={32} height={32} className="w-full h-full object-contain" />
           </div>
           <span>
             {siteConfig.name}<span className="text-[#4F46E5]">.</span>
