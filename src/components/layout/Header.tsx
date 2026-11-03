@@ -10,27 +10,29 @@ export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[#E7E7E4]/80 bg-white/80 backdrop-blur-md">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 w-full border-b border-white/40 bg-white/40 backdrop-blur-md">
+      <div className="max-w-[1240px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 font-bold text-lg text-[#0B0B0F] hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4F46E5] rounded-lg"
+          className="flex items-center gap-2.5 font-extrabold text-xl text-[#0B0B0F] hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4F46E5] rounded-lg tracking-tight"
           aria-label={`${siteConfig.name} Home`}
         >
-          <div className="w-8 h-8 rounded-lg bg-[#4F46E5] flex items-center justify-center text-white shadow-sm">
-            <Layers className="w-4 h-4" />
+          <div className="w-8 h-8 rounded-lg bg-[#0B0B0F] flex items-center justify-center text-white shadow-sm">
+            <Layers className="w-4 h-4 text-white" />
           </div>
-          <span className="tracking-tight font-extrabold">{siteConfig.name}</span>
+          <span>
+            {siteConfig.name}<span className="text-[#4F46E5]">.</span>
+          </span>
         </Link>
 
         {/* Center Search Bar (Desktop) */}
-        <div className="hidden md:block flex-1 max-w-md mx-4">
-          <ToolSearch placeholder="Search 15+ browser tools..." />
+        <div className="hidden md:block flex-1 max-w-sm mx-4">
+          <ToolSearch placeholder="Search 25+ browser tools..." />
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6 text-[13px] font-medium text-[#5B5B66]" aria-label="Main navigation">
+        <nav className="hidden md:flex items-center gap-7 text-[13px] font-semibold text-[#5B5B66]" aria-label="Main navigation">
           {siteConfig.navItems.map((item) => (
             <Link
               key={item.href}
@@ -42,7 +44,7 @@ export const Header: React.FC = () => {
           ))}
           <Link
             href="/tools"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#0B0B0F] text-white text-xs font-semibold hover:bg-[#1E1E24] shadow-btn transition-transform active:scale-95"
+            className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-[#111116] text-white text-xs font-bold hover:bg-[#222228] shadow-selly-dark transition-all hover:scale-[1.02] active:scale-95"
           >
             <span>All Tools</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

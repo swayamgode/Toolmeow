@@ -30,6 +30,55 @@ body {
   background: linear-gradient(135deg, #CFE6FF 0%, #E6E3FF 50%, #FBE3EC 100%);
 }
 
+/* Selly-inspired Ethereal Sky & Cloud Background */
+.selly-cloud-canvas {
+  position: relative;
+  background-color: #faf9fd;
+  background-image: 
+    radial-gradient(ellipse 75% 65% at 0% 18%, rgba(160, 218, 255, 0.85) 0%, rgba(195, 235, 255, 0.55) 35%, transparent 68%),
+    radial-gradient(ellipse 70% 60% at 100% 22%, rgba(226, 198, 255, 0.88) 0%, rgba(246, 216, 255, 0.55) 40%, transparent 68%),
+    radial-gradient(circle 540px at 92% 52%, rgba(247, 210, 250, 0.65) 0%, transparent 65%),
+    radial-gradient(circle 540px at 8% 48%, rgba(175, 226, 255, 0.65) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 45% at 50% 12%, #ffffff 0%, rgba(255, 255, 255, 0.95) 40%, rgba(255, 255, 255, 0.3) 75%, transparent 100%),
+    linear-gradient(180deg, #f0f7fe 0%, #faf5ff 45%, #fafaf9 100%);
+}
+
+.cloud-blob-left {
+  position: absolute;
+  top: -60px;
+  left: -80px;
+  width: 580px;
+  height: 520px;
+  background: radial-gradient(circle at 40% 40%, rgba(160, 218, 255, 0.75) 0%, rgba(192, 232, 255, 0.45) 50%, transparent 75%);
+  filter: blur(50px);
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.cloud-blob-right {
+  position: absolute;
+  top: -50px;
+  right: -80px;
+  width: 620px;
+  height: 560px;
+  background: radial-gradient(circle at 55% 40%, rgba(228, 192, 255, 0.8) 0%, rgba(246, 214, 255, 0.5) 50%, transparent 75%);
+  filter: blur(55px);
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.shadow-selly-dark {
+  box-shadow: 0 14px 32px -4px rgba(17, 17, 22, 0.38), 0 4px 12px -2px rgba(17, 17, 22, 0.22);
+}
+
+.shadow-selly-light {
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.mac-window-shadow {
+  box-shadow: 0 35px 85px -15px rgba(22, 29, 62, 0.16), 0 0 0 1px rgba(255, 255, 255, 0.85);
+}
+
 .glass-frame {
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(16px);
