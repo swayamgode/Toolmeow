@@ -55,6 +55,16 @@ const toolComponents: Record<string, React.ComponentType<any>> = {
     import('@/features/regex-tester/RegexTesterTool').then((m) => m.RegexTesterTool), { ssr: false }),
   'hash-generator': dynamic(() =>
     import('@/features/hash-generator/HashGeneratorTool').then((m) => m.HashGeneratorTool), { ssr: false }),
+  'uuid-generator': dynamic(() =>
+    import('@/features/uuid-generator/UuidGeneratorTool').then((m) => m.UuidGeneratorTool), { ssr: false }),
+  'lorem-ipsum-generator': dynamic(() =>
+    import('@/features/lorem-ipsum-generator/LoremIpsumGeneratorTool').then((m) => m.LoremIpsumGeneratorTool), { ssr: false }),
+  'url-encoder-decoder': dynamic(() =>
+    import('@/features/url-encoder-decoder/UrlEncoderDecoderTool').then((m) => m.UrlEncoderDecoderTool), { ssr: false }),
+  'html-entity-converter': dynamic(() =>
+    import('@/features/html-entity-converter/HtmlEntityConverterTool').then((m) => m.HtmlEntityConverterTool), { ssr: false }),
+  'jwt-decoder': dynamic(() =>
+    import('@/features/jwt-decoder/JwtDecoderTool').then((m) => m.JwtDecoderTool), { ssr: false }),
 };
 
 export function ToolRenderer({ slug }: { slug: string }) {

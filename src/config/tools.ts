@@ -1578,6 +1578,307 @@ Our Hash Generator computes SHA-256, SHA-512, SHA-384, and SHA-1 hashes directly
       ],
     },
   },
+  {
+    slug: 'uuid-generator',
+    name: 'UUID Generator',
+    shortDescription: 'Generate random v4 UUIDs and GUIDs in bulk with custom casing, hyphens, and braces.',
+    seoTitle: 'Free UUID Generator - Generate Random UUID v4 & GUID Online',
+    seoDescription:
+      'Generate cryptographically random UUID v4 and GUID identifiers in bulk. Choose uppercase, without hyphens, or brackets directly in your browser.',
+    category: 'text-dev',
+    tags: ['UUID', 'GUID', 'Developer', 'Generator'],
+    keywords: ['uuid generator', 'guid generator', 'random uuid', 'uuid v4', 'bulk uuid generator'],
+    icon: 'Fingerprint',
+    popular: true,
+    addedAt: '2026-02-02',
+    relatedSlugs: ['password-generator', 'hash-generator', 'base64-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Choose how many UUIDs you wish to generate (from 1 to 50 using quick chips, or custom count).',
+        'Toggle formatting switches such as UPPERCASE, Hyphens (-), or Enclose in Braces {}.',
+        'Inspect the generated list of cryptographically secure UUID version 4 strings.',
+        'Click Copy next to any individual UUID, or click Copy All UUIDs to copy the complete list.',
+      ],
+      about: `A Universally Unique Identifier (UUID), also frequently referred to as a Globally Unique Identifier (GUID) in Microsoft ecosystems, is a 128-bit label used for identifying information in computer systems. Standardized under RFC 4122, UUIDs enable distributed systems to uniquely identify records, transactions, database rows, sessions, and files without coordinating with a central registration authority.
+
+Version 4 UUIDs are the most common variant, relying on cryptographic pseudo-randomness. A standard v4 UUID contains 32 hexadecimal characters grouped into five segments separated by hyphens (8-4-4-4-12 format), representing 122 bits of true randomness. The total pool of possible UUIDs is 2^122 (approximately 5.3 x 10^36), rendering the probability of generating a duplicate astronomically negligible. Even if a system generated one billion UUIDs every single second for a century, the chance of a single collision remains effectively zero.
+
+Our UUID Generator is built using the browser-native Web Cryptography API (crypto.randomUUID). Unlike older utilities that relied on Math.random()—which produces predictable pseudo-random seeds vulnerable to collision attacks—our generator leverages operating system hardware entropy.
+
+Key capabilities include:
+1. **Bulk Batch Generation:** Instantly generate up to 1,000 UUIDs in milliseconds for database seeders, test fixtures, and mock datasets.
+2. **Flexible Formatting:** Toggle uppercase hexadecimal output, strip hyphens for compact storage in MongoDB or UUID hex columns, or wrap in curly braces for C# and Windows registry formats.
+3. **One-Click Clipboard Operations:** Copy individual IDs or export the entire list formatted with clean line breaks.
+4. **Complete Client-Side Security:** Zero network requests are made. Identifiers are created inside temporary browser memory and never logged to external servers.`,
+      faqs: [
+        {
+          q: 'What is a UUID version 4 and how does it work?',
+          a: 'A UUID v4 is a 128-bit identifier generated using random numbers. It has 122 bits of entropy, making accidental collisions virtually impossible.',
+        },
+        {
+          q: 'What is the difference between a UUID and a GUID?',
+          a: 'GUID is Microsoft’s term for a UUID. Both formats conform to the same 128-bit structure and RFC 4122 specifications.',
+        },
+        {
+          q: 'Can two generated UUIDs ever be identical?',
+          a: 'The probability of a collision in UUID v4 is so minuscule that it would require generating billions of IDs every second for centuries before an accidental match occurs.',
+        },
+        {
+          q: 'Why would I want UUIDs without hyphens?',
+          a: 'Compact 32-character hexadecimal strings without hyphens are frequently required by NoSQL databases, URL query parameters, and specific API schemas.',
+        },
+        {
+          q: 'Does this generator transmit the generated UUIDs to any database?',
+          a: 'No. Every UUID is created locally in your browser using crypto.randomUUID() and vanishes when you close the tab.',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'lorem-ipsum-generator',
+    name: 'Lorem Ipsum Generator',
+    shortDescription: 'Generate custom dummy placeholder text by paragraphs, sentences, or words.',
+    seoTitle: 'Lorem Ipsum Generator - Free Placeholder Dummy Text Online',
+    seoDescription:
+      'Create custom Lorem Ipsum dummy text by paragraphs, sentences, or word counts. Instant copy and formatting for designers and web developers.',
+    category: 'text-dev',
+    tags: ['Lorem', 'Text', 'Design', 'Developer', 'Generator'],
+    keywords: ['lorem ipsum generator', 'dummy text generator', 'placeholder text', 'lorem ipsum dolor', 'text generator'],
+    icon: 'FileText',
+    popular: true,
+    addedAt: '2026-02-02',
+    relatedSlugs: ['word-counter', 'case-converter', 'markdown-previewer'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select whether you want to generate paragraphs, sentences, or individual words.',
+        'Enter or adjust the desired count using the count selector.',
+        'Choose whether to start your text with the classic opening: "Lorem ipsum dolor sit amet...".',
+        'Review the generated placeholder copy inside the main viewing container.',
+        'Click Copy Text to copy the dummy text directly to your clipboard.',
+      ],
+      about: `In graphic design, website wireframing, publishing, and digital typography, Lorem Ipsum is the standard dummy placeholder text used to demonstrate the graphical elements of a document or visual presentation. By populating layouts with neutral, non-distracting pseudo-Latin prose, designers and software engineers allow clients to focus on visual hierarchy, font typography, page spacing, and composition rather than getting sidetracked by actual reading content.
+
+The origins of Lorem Ipsum date back to the 1st century BC, derived from sections 1.10.32 and 1.10.33 of Cicero's philosophical treatise 'De finibus bonorum et malorum' (On the Extremes of Good and Evil). The text was popularized in the 1960s with the release of Letraset transfer sheets, and later transitioned into the digital age with desktop publishing applications like Aldus PageMaker.
+
+Our Lorem Ipsum Generator provides a modern, high-speed utility tailored for web developers and UI designers:
+1. **Multi-Unit Granularity:** Generate exact quantities of paragraphs, sentences, or standalone word counts to fit precise layout containers.
+2. **Natural Sentence Flow:** Uses an authentic vocabulary model with varied sentence lengths, punctuation, and capitalization to mimic natural human reading rhythms.
+3. **Flexible Classic Prefix:** Easily toggle whether your generated output opens with the traditional 'Lorem ipsum dolor sit amet' phrase or starts with randomized variations.
+4. **Instant Browser Performance:** Generates thousands of words instantaneously without page reloads, external scripts, or network latency.
+5. **Completely Free & Ad-Friendly:** Clean output formatted for immediate pasting into Figma, HTML wireframes, Adobe XD, or content management systems.`,
+      faqs: [
+        {
+          q: 'What does the phrase Lorem Ipsum mean in English?',
+          a: 'Lorem Ipsum is derived from Latin, specifically Cicero’s treatise. The word "Lorem" is a truncated form of "dolorem", which translates to "pain" or "sorrow".',
+        },
+        {
+          q: 'Why do designers use dummy text instead of real language?',
+          a: 'Using readable text distracts reviewers from evaluating design layouts, font hierarchy, and spacing. Lorem Ipsum provides natural visual balance without readable distraction.',
+        },
+        {
+          q: 'Can I generate exact word counts for character limits?',
+          a: 'Yes. Switch the generator type to Words and input your exact target number to generate precisely bounded copy.',
+        },
+        {
+          q: 'Is this dummy text safe for commercial client presentations?',
+          a: 'Yes. Lorem Ipsum is the universally accepted industry standard across design agencies, software firms, and corporate publishing.',
+        },
+        {
+          q: 'Does this generator require an internet connection?',
+          a: 'No. The entire vocabulary dictionary and generator algorithm run locally in your web browser with zero server reliance.',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'url-encoder-decoder',
+    name: 'URL Encoder & Decoder',
+    shortDescription: 'Encode and decode URLs, query strings, and percent-encoded parameters with ease.',
+    seoTitle: 'URL Encoder & Decoder Online - Percent-Encode URLs & Params',
+    seoDescription:
+      'Encode and decode URLs, URI parameters, and query strings online. Inspect key-value parameters with instant copy and zero server uploads.',
+    category: 'text-dev',
+    tags: ['URL', 'Encode', 'Decode', 'Developer', 'Web'],
+    keywords: ['url encoder', 'url decoder', 'percent encoding', 'encode uri online', 'decode url parameter'],
+    icon: 'Link2',
+    popular: true,
+    addedAt: '2026-02-02',
+    relatedSlugs: ['base64-converter', 'html-entity-converter', 'json-formatter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Paste any URL, query string, or plain text into the top input textarea.',
+        'View the percent-encoded URL and human-readable decoded URL generated side-by-side.',
+        'Review the automatically parsed Query Parameters table breaking down key-value pairs.',
+        'Click Copy next to either output format to save the result to your clipboard.',
+      ],
+      about: `Uniform Resource Identifiers (URIs) and URLs are strictly limited to a defined set of US-ASCII characters according to RFC 3986. Standard web protocols designate specific characters as "reserved" delimiters—including forward slashes (/), question marks (?), ampersands (&), equals signs (=), hash symbols (#), and colons (:). When data transmitted inside a URL query parameter or path segment contains spaces, non-ASCII international symbols, or reserved delimiters, those characters must be translated into percent-encoded representations.
+
+Percent-encoding replaces unsafe characters with a percent sign (%) followed by the two-digit hexadecimal representation of their corresponding byte values. For example, a blank space becomes '%20' (or '+'), an ampersand becomes '%26', and non-English UTF-8 characters are encoded across multi-byte hex sequences.
+
+Failing to properly encode or decode URL strings leads to broken website links, corrupted query parameters, tracking loss, and HTTP 400 Bad Request errors.
+
+Our URL Encoder & Decoder offers a complete developer suite:
+1. **Simultaneous Bi-Directional Conversion:** Live display generates both percent-encoded and fully decoded representations simultaneously without clicking convert buttons.
+2. **Automated Query String Parser:** Automatically parses complex URL parameter strings into a structured, readable key-value table.
+3. **UTF-8 Multi-Byte Precision:** Accurately encodes and decodes accented vowels, Asian scripts, Cyrillic alphabets, and emojis without data loss.
+4. **RFC 3986 Compliance:** Utilizes native JavaScript encodeURIComponent and decodeURIComponent algorithms for 100% production web parity.
+5. **Guaranteed Privacy:** Sensitive authentication callback tokens, tracking query parameters, and private URLs remain entirely on your local device.`,
+      faqs: [
+        {
+          q: 'What is percent-encoding in URLs?',
+          a: 'Percent-encoding is a mechanism to represent reserved or non-ASCII characters in a URI using a percent symbol followed by two hexadecimal digits.',
+        },
+        {
+          q: 'What is the difference between encodeURI and encodeURIComponent?',
+          a: 'encodeURI preserves complete URL syntax delimiters like protocol and slashes, while encodeURIComponent encodes all reserved characters, making it ideal for query string parameters.',
+        },
+        {
+          q: 'How does the tool handle emojis and international characters?',
+          a: 'The encoder serializes characters into UTF-8 octets before applying percent signs, ensuring perfect round-trip encoding and decoding.',
+        },
+        {
+          q: 'Can I extract query parameters from a long URL?',
+          a: 'Yes. The tool features an automatic Query Parameter inspector that extracts every key and value pair into a clean table.',
+        },
+        {
+          q: 'Are the URLs I paste sent to any analytics server?',
+          a: 'No. All processing occurs exclusively in client-side JavaScript memory with zero network requests.',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'html-entity-converter',
+    name: 'HTML Entity Converter',
+    shortDescription: 'Encode and decode special characters into standard named and numeric HTML entities.',
+    seoTitle: 'HTML Entity Encoder & Decoder - Escape Special Characters',
+    seoDescription:
+      'Convert special characters like <, >, &, and quotes into standard HTML entities and decode them back to plain text directly in your browser.',
+    category: 'text-dev',
+    tags: ['HTML', 'Entities', 'Security', 'Developer', 'Escape'],
+    keywords: ['html entity encoder', 'html entity decoder', 'escape html entities', 'html special characters', 'html encode'],
+    icon: 'Code',
+    popular: true,
+    addedAt: '2026-02-02',
+    relatedSlugs: ['url-encoder-decoder', 'markdown-previewer', 'json-formatter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select either HTML Entity Encode or HTML Entity Decode mode using the toggle buttons.',
+        'Paste your HTML snippet, code block, or text into the input textarea.',
+        'View the converted entity-encoded or decoded output rendered in real time.',
+        'Click Swap to reverse the operation, or click Copy Output to copy the result.',
+      ],
+      about: `In HTML and XML web markup, certain characters have reserved syntactic meanings that instruct browser rendering engines how to parse documents. For example, the less-than symbol (<) denotes the opening of an HTML tag, the greater-than symbol (>) closes an HTML tag, the ampersand (&) initiates an entity reference, and quotation marks delimit attribute values.
+
+If a web application displays user-submitted text containing these characters without escaping them into HTML entities, the browser may misinterpret the text as executable markup or script tags. This vulnerability is the root cause of Cross-Site Scripting (XSS) attacks, one of the most critical security vulnerabilities on the internet. Furthermore, unescaped characters cause syntax errors and broken web typography.
+
+HTML entity encoding translates reserved characters into safe entity representations:
+- **& (Ampersand):** becomes '&amp;'
+- **< (Less Than):** becomes '&lt;'
+- **> (Greater Than):** becomes '&gt;'
+- **" (Double Quote):** becomes '&quot;'
+- **' (Single Quote):** becomes '&#39;' or '&apos;'
+
+Our HTML Entity Converter provides an indispensable developer utility:
+1. **Bi-Directional Conversion:** Seamlessly switch between encoding raw markup into safe entities and decoding entity-heavy payloads back into clean, readable text.
+2. **Instant Live Preview:** As you edit characters, the converted output updates synchronously without page refresh.
+3. **One-Click Swap:** Switch input and output with a single button for rapid round-trip verification.
+4. **Zero-Server Processing:** Protects proprietary website code, email templates, and internal documentation by processing every byte strictly inside browser memory.`,
+      faqs: [
+        {
+          q: 'Why must special characters be encoded in HTML?',
+          a: 'Encoding characters like <, >, and & prevents browsers from interpreting raw text as executable HTML tags, safeguarding against syntax corruption and XSS vulnerabilities.',
+        },
+        {
+          q: 'What is the difference between named and numeric entities?',
+          a: 'Named entities use memorable abbreviations like &lt; while numeric entities reference decimal (&#60;) or hexadecimal (&#x3C;) Unicode codepoints.',
+        },
+        {
+          q: 'Does this tool decode entity references back to plain text?',
+          a: 'Yes. Switch to Decode mode to transform strings containing &amp;, &lt;, and &quot; back into standard characters.',
+        },
+        {
+          q: 'Can I use this tool to safely display code snippets on my blog?',
+          a: 'Yes. Encoding your code snippets ensures they render cleanly as visible text rather than being executed by the browser.',
+        },
+        {
+          q: 'Is my input source code uploaded anywhere?',
+          a: 'Never. All conversion logic runs purely in your local browser sandbox with zero network transmission.',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'jwt-decoder',
+    name: 'JWT Token Decoder',
+    shortDescription: 'Decode JSON Web Tokens locally in your browser. Inspect header, payload, and expiry.',
+    seoTitle: 'JWT Decoder Online - Safe Client-Side JSON Web Token Viewer',
+    seoDescription:
+      'Decode and inspect JWT headers, payloads, claims, and expiration dates 100% locally in your browser. Your secret tokens never touch a server.',
+    category: 'text-dev',
+    tags: ['JWT', 'Security', 'Auth', 'Developer', 'Tokens'],
+    keywords: ['jwt decoder', 'decode jwt online', 'json web token viewer', 'jwt inspector', 'parse jwt'],
+    icon: 'Key',
+    popular: true,
+    addedAt: '2026-02-02',
+    relatedSlugs: ['base64-converter', 'json-formatter', 'hash-generator'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Paste any JSON Web Token (three dot-separated base64url segments) into the input field.',
+        'View the decoded Header (algorithm & token type) formatted in color-coded JSON.',
+        'Inspect the decoded Payload containing user claims, role permissions, and timestamps.',
+        'Check the live token validity and expiration alert indicating if the token has expired.',
+        'Use the Copy buttons to store formatted JSON objects into your clipboard.',
+      ],
+      about: `JSON Web Tokens (JWT), defined in RFC 7519, are an open standard for securely transmitting information between parties as a compact, URL-safe JSON object. Widely adopted across modern web development, microservices, and mobile applications, JWTs serve as the primary authentication mechanism for OAuth 2.0, OpenID Connect, and RESTful APIs.
+
+A standard JWT consists of three distinct parts separated by dots (header.payload.signature):
+1. **Header:** Typically contains the cryptographic algorithm used (such as HS256, RS256, or ES256) and the token type ('JWT').
+2. **Payload:** Contains the claims—statements about an entity (typically the authenticated user) and additional metadata such as issuer (iss), subject (sub), audience (aud), issue time (iat), and expiration time (exp).
+3. **Signature:** Created by hashing the encoded header and payload with a secret key or private certificate, ensuring the token has not been tampered with in transit.
+
+**The Privacy Danger of Cloud JWT Decoders:**
+Because JWTs frequently contain sensitive corporate user identifiers, internal authorization roles, and session credentials, pasting tokens into public third-party web tools is a major security hazard. Insecure websites often log tokens on remote servers or analytics tools.
+
+Our JWT Decoder is built with a strict 100% client-side security architecture:
+- **Zero Server Transmission:** Tokens are parsed entirely in your browser using local Base64URL and JSON parsing algorithms. Not a single byte ever leaves your computer.
+- **Automated Expiration Inspection:** Automatically checks standard 'exp' timestamp claims against your device's current clock, flagging expired tokens with clear visual warnings.
+- **Formatted JSON View:** Prettifies both header and payload data into indented, readable JSON with one-click clipboard copying.
+- **No Private Keys Needed:** Inspect token claims safely during debugging without sharing your secret cryptographic keys.`,
+      faqs: [
+        {
+          q: 'Is it safe to decode my secret JWT here?',
+          a: 'Yes. Unlike cloud-based decoders, our tool runs 100% locally inside your web browser. No token data is ever transmitted across the internet.',
+        },
+        {
+          q: 'Does this tool verify the cryptographic signature?',
+          a: 'This tool decodes and inspects headers and payload claims. Verifying signatures requires your private secret key, which should never be entered into any web tool.',
+        },
+        {
+          q: 'How does the tool know if a JWT is expired?',
+          a: 'It inspects the standard "exp" (expiration time) claim in the payload and compares the epoch seconds against your current system clock.',
+        },
+        {
+          q: 'What are the three parts of a JSON Web Token?',
+          a: 'A JWT comprises three Base64URL-encoded strings separated by dots: the Header, the Payload (claims), and the Signature.',
+        },
+        {
+          q: 'Can I use this tool to inspect tokens with custom claims?',
+          a: 'Yes. Any valid JSON object inside the payload—including custom enterprise roles, permissions, and metadata—will be formatted and displayed cleanly.',
+        },
+      ],
+    },
+  },
 ];
 
 export const POPULAR_TOOLS = TOOLS.filter((t) => t.popular);

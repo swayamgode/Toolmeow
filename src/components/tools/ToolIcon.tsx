@@ -26,6 +26,11 @@ import {
   FileCode,
   Code2,
   Shield,
+  Fingerprint,
+  FileText,
+  Link2,
+  Code,
+  Key,
   type LucideProps,
 } from 'lucide-react';
 
@@ -55,6 +60,11 @@ const iconMap: Record<string, React.FC<LucideProps>> = {
   FileCode,
   Code2,
   Shield,
+  Fingerprint,
+  FileText,
+  Link2,
+  Code,
+  Key,
 };
 
 export interface ToolIconProps extends LucideProps {
