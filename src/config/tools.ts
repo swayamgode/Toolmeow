@@ -1879,6 +1879,424 @@ Our JWT Decoder is built with a strict 100% client-side security architecture:
       ],
     },
   },
+  // ───── NEW BATCH 3 ─────
+  {
+    slug: 'number-base-converter',
+    name: 'Number Base Converter',
+    shortDescription: 'Convert numbers between binary, octal, decimal, and hexadecimal instantly.',
+    seoTitle: 'Number Base Converter — Binary, Hex, Octal & Decimal Online',
+    seoDescription: 'Free online number base converter. Instantly convert between binary (base 2), octal (base 8), decimal (base 10), and hexadecimal (base 16) in your browser.',
+    category: 'text-dev',
+    tags: ['Binary', 'Hex', 'Decimal', 'Octal', 'Developer'],
+    keywords: ['number base converter', 'binary to decimal', 'hex to binary', 'decimal to hexadecimal', 'octal converter', 'base conversion'],
+    icon: 'Hash',
+    popular: true,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['uuid-generator', 'hash-generator', 'url-encoder-decoder'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Type a number in any of the four input fields (Binary, Octal, Decimal, or Hexadecimal).',
+        'The other three fields update instantly with the converted equivalent.',
+        'Click the Copy button next to any field to copy that value to the clipboard.',
+        'Clear and re-enter a new number at any time in any base field.',
+      ],
+      about: `A **number base** (or radix) defines the number of distinct digits available in a positional numeral system. Humans use base 10 (decimal) by nature because we have ten fingers, but computers operate exclusively in base 2 (binary) — using only the digits 0 and 1 to represent all data via electronic switches.
+
+**Binary (Base 2):** Every digit is either 0 or 1. Modern CPUs, memory, and storage systems store all data in binary at the lowest hardware level. For example, the decimal number 42 is represented as 101010 in binary.
+
+**Octal (Base 8):** Uses digits 0–7. Historically significant in computing because one octal digit maps to exactly 3 bits. Unix/Linux file permissions (e.g., chmod 755) are expressed in octal notation.
+
+**Decimal (Base 10):** The standard everyday numeral system using digits 0–9. It is the default representation used in arithmetic, commerce, and human communication.
+
+**Hexadecimal (Base 16):** Uses digits 0–9 and letters A–F (representing values 10–15). One hex digit maps to exactly 4 binary bits (a nibble), making it extremely convenient for representing binary values compactly. Web colors (#FF5733), memory addresses, and byte values are commonly written in hex.
+
+Our Number Base Converter operates entirely in your browser using JavaScript parseInt and toString(base) operations. No data is ever transmitted to a server.`,
+      faqs: [
+        { q: 'How do I convert binary to decimal?', a: 'Each binary digit represents a power of 2. For example, 1011 in binary = 1×8 + 0×4 + 1×2 + 1×1 = 11 in decimal. Our tool does this automatically.' },
+        { q: 'What is hexadecimal used for in programming?', a: 'Hex is used for memory addresses, color codes (#RRGGBB), byte representation, and bitmask values because one hex digit represents exactly 4 binary bits (a nibble).' },
+        { q: 'What is the highest number this converter supports?', a: 'The tool supports safe integers up to 2^53 − 1 (Number.MAX_SAFE_INTEGER), which is 9,007,199,254,740,991 in decimal.' },
+        { q: 'Why do Unix file permissions use octal?', a: 'Each digit in a 3-digit octal number maps to exactly 3 binary bits (read/write/execute), making octal a natural fit for describing 9-bit permission patterns.' },
+        { q: 'Can I paste hex values with 0x prefix?', a: 'Remove the 0x prefix before pasting — the tool expects raw hex digits like FF, not 0xFF.' },
+      ],
+    },
+  },
+  {
+    slug: 'morse-code-converter',
+    name: 'Morse Code Converter',
+    shortDescription: 'Encode text to Morse code or decode Morse dots and dashes back to text.',
+    seoTitle: 'Morse Code Converter — Encode & Decode Dots and Dashes Online',
+    seoDescription: 'Free Morse code translator. Convert English text to Morse code (dots and dashes) or decode Morse code back to readable text. Works 100% in your browser.',
+    category: 'text-dev',
+    tags: ['Morse Code', 'Encoder', 'Decoder', 'Communication'],
+    keywords: ['morse code converter', 'text to morse code', 'morse code translator', 'decode morse code', 'morse encoder online'],
+    icon: 'Radio',
+    popular: false,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['case-converter', 'html-entity-converter', 'base64-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select the mode: "Text → Morse" to encode, or "Morse → Text" to decode.',
+        'Type or paste your input in the text area.',
+        'The converted output appears instantly below.',
+        'Use the Swap button to exchange input and output for quick round-trip testing.',
+        'Click Copy to save the Morse code or decoded text to your clipboard.',
+      ],
+      about: `Morse code is a method of encoding text characters as standardized sequences of two signal durations: short signals (dots •) and long signals (dashes —). It was developed in the 1830s and 1840s by **Samuel Morse** and **Alfred Vail** for use with the electrical telegraph, revolutionizing long-distance communication worldwide.
+
+**How Morse Code Works:**
+Each letter, digit, and punctuation character is mapped to a unique pattern of dots and dashes. For example:
+- Letter E = . (single dot, the most frequent letter in English, assigned the shortest code)
+- Letter T = — (single dash)
+- SOS = ... — — — ... (the universally recognized distress signal)
+
+Words are separated by a forward slash (/), and characters within a word are separated by single spaces.
+
+**Modern Uses of Morse Code:**
+Though largely replaced by digital telecommunications, Morse code remains actively used by:
+1. Amateur (ham) radio operators worldwide.
+2. Aviation navigation beacons that transmit airport identifiers in Morse.
+3. Military and emergency communication systems as a reliable backup.
+4. Accessibility tools for people with disabilities who can use Morse via single-switch devices.
+
+Our converter supports the full International Morse Code alphabet (A-Z), digits (0-9), and common punctuation marks including period, comma, question mark, exclamation, slash, and more.`,
+      faqs: [
+        { q: 'What is the Morse code for SOS?', a: 'SOS is ... — — — ... (three dots, three dashes, three dots). It is the internationally recognized distress signal in Morse code.' },
+        { q: 'How are words separated in Morse code?', a: 'Individual letters within a word are separated by a single space. Words are separated by a forward slash (/).' },
+        { q: 'Does Morse code support all languages?', a: 'Standard International Morse Code covers the Latin alphabet (A-Z), digits (0-9), and common punctuation. Extended Morse codes exist for accented characters in other languages.' },
+        { q: 'Can Morse code be used without a telegraph?', a: 'Yes. Morse code can be transmitted via sound (audio beeps), light flashes, vibrations, or even flag signals — any medium capable of two distinct states.' },
+        { q: 'Who invented Morse code?', a: 'Samuel F. B. Morse and Alfred Vail developed the original Morse code in the 1830s and 1840s alongside the electrical telegraph.' },
+      ],
+    },
+  },
+  {
+    slug: 'aspect-ratio-calculator',
+    name: 'Aspect Ratio Calculator',
+    shortDescription: 'Calculate and scale image or video dimensions while preserving aspect ratio.',
+    seoTitle: 'Aspect Ratio Calculator — Scale Images & Videos Online Free',
+    seoDescription: 'Free aspect ratio calculator. Find the ratio of any width × height pair, scale to new dimensions, and maintain perfect proportions for images, videos, and designs.',
+    category: 'image',
+    tags: ['Aspect Ratio', 'Image', 'Video', 'Design', 'Resize'],
+    keywords: ['aspect ratio calculator', 'image aspect ratio', 'video aspect ratio', 'scale image dimensions', '16:9 calculator', 'maintain aspect ratio'],
+    icon: 'Ratio',
+    popular: true,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['image-resizer', 'image-compressor', 'image-format-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Enter the original width and height in pixels in the top two fields.',
+        'The simplified aspect ratio (e.g. 16:9) appears instantly in the result panel.',
+        'Enter a target width OR target height to calculate the scaled dimension.',
+        'The missing dimension is automatically computed to preserve the exact aspect ratio.',
+      ],
+      about: `The **aspect ratio** of an image, video, or screen is the proportional relationship between its width and its height, expressed as W:H with both values reduced to their lowest common denominator. Getting aspect ratios right is fundamental to professional digital media production.
+
+**Common Aspect Ratios and Their Uses:**
+- **16:9** – The global standard for HD and 4K video, television, YouTube, and most modern laptop and desktop screens.
+- **4:3** – The original television and early computer monitor standard. Still common in some presentation formats.
+- **1:1** – Perfect square. Popularized by Instagram for profile images and social media posts.
+- **9:16** – Vertical/portrait video format for TikTok, Instagram Reels, YouTube Shorts, and smartphone full-screen content.
+- **21:9** – Ultra-wide cinematic format used in feature films and ultra-wide gaming monitors.
+- **3:2** – Standard DSLR camera sensor ratio derived from the original 35mm film frame dimensions.
+
+**Why Preserving Aspect Ratio Matters:**
+Scaling an image without maintaining aspect ratio stretches or squishes the content, making people and objects appear distorted. This is especially problematic in:
+- Social media thumbnails and profile images.
+- Video player embeds and responsive web design.
+- Print media where pixel-per-inch (DPI) scaling must stay proportional.
+
+Our calculator uses the **Greatest Common Divisor (GCD)** algorithm to reduce the ratio to its simplest integer form, then applies linear scaling to compute the target dimension while guaranteeing perfect proportions.`,
+      faqs: [
+        { q: 'What is the most common video aspect ratio?', a: '16:9 is the dominant standard for HD and 4K video content, covering YouTube, streaming platforms, television, and most modern monitors.' },
+        { q: 'How do I scale an image while maintaining aspect ratio?', a: 'Enter the original dimensions, then enter only the target width OR target height. The calculator will compute the other dimension proportionally.' },
+        { q: 'What is the aspect ratio for a standard Instagram post?', a: 'Square posts use 1:1. Portrait posts use 4:5. Stories and Reels use 9:16.' },
+        { q: 'How is the simplified ratio calculated?', a: 'The tool divides both width and height by their Greatest Common Divisor (GCD). For example, 1920×1080 → GCD is 120 → 16:9.' },
+        { q: 'Can I use this for print dimensions?', a: 'Yes. Enter the width and height in any consistent unit (inches, cm, mm, pixels). The ratio and scaling math works the same regardless of unit.' },
+      ],
+    },
+  },
+  {
+    slug: 'css-gradient-generator',
+    name: 'CSS Gradient Generator',
+    shortDescription: 'Visually build beautiful linear, radial, and conic CSS gradients with a live preview.',
+    seoTitle: 'CSS Gradient Generator — Linear, Radial & Conic Gradients Online',
+    seoDescription: 'Free CSS gradient generator with live preview. Create stunning linear, radial, and conic gradients with custom color stops, angles, and positions. Copy CSS instantly.',
+    category: 'text-dev',
+    tags: ['CSS', 'Gradient', 'Design', 'Developer Tools', 'Colors'],
+    keywords: ['css gradient generator', 'linear gradient generator', 'css background gradient', 'radial gradient css', 'gradient color picker online'],
+    icon: 'Paintbrush2',
+    popular: true,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['color-converter', 'hash-generator', 'markdown-previewer'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Choose the gradient type: Linear, Radial, or Conic.',
+        'Adjust the angle slider for linear and conic gradients.',
+        'Click each color swatch to change the color of a gradient stop.',
+        'Drag the position slider to reposition each color stop along the gradient.',
+        'Add more color stops with the Add Stop button for multi-color gradients.',
+        'Copy the generated CSS from the output box and paste it directly into your stylesheet.',
+      ],
+      about: `CSS gradients allow web developers and designers to create smooth transitions between multiple colors directly in the browser using pure CSS — without needing a single image file. This eliminates unnecessary HTTP requests, reduces bandwidth consumption, and allows infinite scaling with no pixelation.
+
+**Three Types of CSS Gradients:**
+
+**1. Linear Gradients**
+The most common type. Colors transition along a straight line at a specified angle:
+\`background: linear-gradient(135deg, #6d28d9, #ec4899);\`
+
+The angle can be set in degrees (0deg = top to bottom, 90deg = left to right, 135deg = diagonal).
+
+**2. Radial Gradients**
+Colors radiate outward from a center point in an elliptical or circular pattern:
+\`background: radial-gradient(circle, #6d28d9, #ec4899);\`
+
+Commonly used for spotlight effects, depth simulation, and circular button highlights.
+
+**3. Conic Gradients**
+Colors rotate around a center point like a pie chart or color wheel:
+\`background: conic-gradient(from 90deg, #6d28d9, #ec4899);\`
+
+Used for pie charts, loading spinners, and color wheels.
+
+**Color Stops:**
+Any number of color stops can be added at specific positions (0%–100%). Multi-stop gradients allow complex rainbow and sunset effects with precise control over where each color begins and ends.
+
+Our generator produces valid, vendor-prefix-free CSS3 syntax compatible with all modern browsers including Chrome, Firefox, Safari, and Edge.`,
+      faqs: [
+        { q: 'What is a CSS gradient?', a: 'A CSS gradient is a smooth color transition between two or more colors, rendered entirely by the browser without needing an image file.' },
+        { q: 'What is the difference between linear and radial gradients?', a: 'Linear gradients flow along a straight line from one point to another. Radial gradients emanate outward from a central point in a circular or elliptical pattern.' },
+        { q: 'Do CSS gradients work in all browsers?', a: 'Linear and radial gradients are supported in all modern browsers without vendor prefixes. Conic gradients are supported in Chrome 69+, Safari 12.1+, Firefox 83+, and Edge 79+.' },
+        { q: 'How many color stops can I add?', a: 'The CSS specification supports any number of color stops. Practically, 2–5 stops produce the most visually appealing results.' },
+        { q: 'Can I use gradients for text color in CSS?', a: 'Yes. Apply the gradient to background, then use background-clip: text and color: transparent to create gradient-colored text.' },
+      ],
+    },
+  },
+  {
+    slug: 'random-number-generator',
+    name: 'Random Number Generator',
+    shortDescription: 'Generate cryptographically secure random numbers with custom range, count, and format.',
+    seoTitle: 'Random Number Generator — Secure & Customizable Online Tool',
+    seoDescription: 'Free random number generator. Generate cryptographically secure random integers or decimals within any range. Set quantity, enable unique-only mode, and copy results.',
+    category: 'text-dev',
+    tags: ['Random', 'Numbers', 'Cryptography', 'Security', 'Generator'],
+    keywords: ['random number generator', 'generate random numbers online', 'secure random number', 'unique random numbers', 'random integer generator'],
+    icon: 'Shuffle',
+    popular: true,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['uuid-generator', 'password-generator', 'hash-generator'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Set the minimum and maximum values to define the range.',
+        'Enter how many numbers to generate (1 to 1000).',
+        'Set decimal places to 0 for integers, or 1–10 for fractional results.',
+        'Enable "No duplicates" to ensure each number appears only once in the output.',
+        'Click Regenerate to produce a fresh set of random numbers.',
+        'Click Copy to save all generated values to your clipboard.',
+      ],
+      about: `Randomness is a cornerstone of modern computing, cryptography, statistics, gaming, scientific simulation, and fair selection processes. However, not all random number generators (RNGs) are equal — the quality of randomness directly determines the security and validity of its use.
+
+**Pseudo-Random vs. Cryptographically Secure:**
+Most programming languages provide a default random function (like Math.random() in JavaScript) that uses a **pseudo-random number generator (PRNG)** — an algorithm that produces deterministic sequences that merely appear random. PRNGs are fast but predictable if the seed is known.
+
+A **Cryptographically Secure Pseudo-Random Number Generator (CSPRNG)** is significantly more robust. Our tool uses \`crypto.getRandomValues()\` from the W3C Web Cryptography API — the same API used by browsers for TLS encryption and digital signatures. This guarantees true unpredictability suitable for:
+- Security tokens and OTP seeds.
+- Lottery ticket number generation.
+- Statistical sampling and A/B test splitting.
+- Monte Carlo simulations.
+- Board game and tabletop RPG dice rolling.
+
+**Unique Number Mode:**
+When the "No duplicates" option is enabled, the generator guarantees that every number in the output set is unique — equivalent to drawing numbered balls from an urn without replacement. This technique is known as **sampling without replacement** in statistics.
+
+**Common Use Cases:**
+- **Lottery and prize draws:** Generate a verifiable set of unique winning numbers with guaranteed non-repetition.
+- **Random sampling in research:** Select a random subset from a population for surveys or experiments.
+- **Dice and board games:** Simulate any sided die by setting range 1–N and count 1.
+- **Raffle tickets:** Assign unique random IDs to participants.
+- **A/B testing split:** Assign users randomly to control or test groups.
+- **Teaching probability:** Demonstrate statistical concepts to students visually.
+
+All generation runs locally inside your browser with zero network requests and zero data collection.`,
+      faqs: [
+        { q: 'Is this random number generator truly random?', a: 'Yes. We use crypto.getRandomValues() from the Web Cryptography API — a cryptographically secure source of randomness, not Math.random().' },
+        { q: 'What is the maximum number of values I can generate?', a: 'Up to 1,000 numbers per generation.' },
+        { q: 'How does the unique mode work?', a: 'Unique mode prevents the same number from appearing more than once in the output — like drawing from a lottery pool without replacing drawn balls.' },
+        { q: 'Can I generate random decimal numbers?', a: 'Yes. Set the Decimals field to 1–10 to generate fractional numbers with the desired precision.' },
+        { q: 'Is this suitable for lottery number picking?', a: 'Yes. Set your lottery range (e.g. 1–49), enable unique mode, set count to 6, and generate your ticket numbers.' },
+      ],
+    },
+  },
+  {
+    slug: 'character-counter',
+    name: 'Character Counter',
+    shortDescription: 'Count characters, words, sentences, and analyze character frequency in any text.',
+    seoTitle: 'Character Counter — Count Characters, Words & Text Stats Online',
+    seoDescription: 'Free character counter tool. Count characters, letters, digits, spaces, sentences, paragraphs, and see character frequency analysis and reading time estimation.',
+    category: 'text-dev',
+    tags: ['Character Count', 'Word Count', 'Text Analysis', 'Writing'],
+    keywords: ['character counter', 'character count online', 'letter counter', 'text analyzer', 'word frequency counter', 'reading time calculator'],
+    icon: 'AlignLeft',
+    popular: false,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['word-counter', 'text-diff', 'case-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Paste or type any text into the input textarea.',
+        'Statistics update in real time as you type — no submit button required.',
+        'Review the breakdown: total characters, letters, digits, spaces, and special characters.',
+        'Scroll down to see the top 10 most frequent characters with percentage breakdown.',
+        'Check the estimated reading time for quick content planning.',
+      ],
+      about: `The **Character Counter** provides detailed linguistic and typographic analytics for any text input. It goes beyond a simple character count to give writers, editors, developers, and social media managers actionable text intelligence.
+
+**What This Tool Measures:**
+
+**Total Characters:** The raw count of every character including letters, digits, punctuation, spaces, and newlines.
+
+**Letters vs. Digits vs. Spaces:** Categorizes each character to reveal the composition of the text. Academic and technical writing tends to have higher digit counts; prose writing has more letters.
+
+**Unique Characters:** The count of distinct characters used. A text using 26 different letters has higher character diversity than one using 10.
+
+**Sentence and Paragraph Count:** Estimates structure by counting terminal punctuation (. ! ?) and blank-line paragraph separators.
+
+**Average Word Length:** A linguistic metric indicating vocabulary complexity. Simple prose averages 4–5 characters per word; academic writing may average 6–8.
+
+**Reading Time Estimation:** Calculated at the average adult reading speed of approximately 200 words per minute (3.33 words per second). Useful for estimating video script duration, blog post depth, and email engagement rates.
+
+**Character Frequency Analysis:** Shows a ranked frequency table of the most common characters. In English, the letter E is typically the most frequent character — appearing in roughly 13% of all letters. This frequency analysis is useful in cryptography (frequency analysis attacks on substitution ciphers) and typography (kerning pair optimization).`,
+      faqs: [
+        { q: 'Does the character count include spaces?', a: 'Yes, the Total character count includes spaces. The tool also shows a separate Space count so you can see the count with and without spaces.' },
+        { q: 'How is reading time calculated?', a: 'Reading time is estimated at 200 words per minute (3.33 words per second), which is the average adult silent reading speed.' },
+        { q: 'What counts as a sentence?', a: 'Sentences are counted by terminal punctuation marks: periods (.), exclamation marks (!), and question marks (?). Abbreviations may cause slight over-counting.' },
+        { q: 'Is this useful for social media character limits?', a: 'Yes. Twitter/X allows 280 characters. LinkedIn posts allow 3,000 characters. Instagram captions allow 2,200. Use this tool to check before you post.' },
+        { q: 'What is character frequency analysis used for?', a: 'In cryptography, frequency analysis helps break substitution ciphers by matching encoded characters to expected language frequencies. In typography, it helps optimize kerning pairs.' },
+      ],
+    },
+  },
+  {
+    slug: 'cron-expression-builder',
+    name: 'Cron Expression Builder',
+    shortDescription: 'Build, parse, and understand cron job expressions with a visual editor and plain-English descriptions.',
+    seoTitle: 'Cron Expression Builder — Visual Cron Job Generator & Explainer',
+    seoDescription: 'Free online cron expression builder. Create cron schedules visually, get instant plain-English descriptions, use common presets, and copy cron strings for Linux, AWS, and CI/CD.',
+    category: 'text-dev',
+    tags: ['Cron', 'Scheduler', 'DevOps', 'Linux', 'Developer Tools'],
+    keywords: ['cron expression builder', 'cron job generator', 'cron expression parser', 'cron schedule generator', 'linux cron online', 'cron syntax explainer'],
+    icon: 'Calendar',
+    popular: true,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['timestamp-converter', 'regex-tester', 'json-formatter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Type a cron expression in the input field (e.g. 0 9 * * 1-5).',
+        'Read the plain-English description that appears instantly below the expression.',
+        'Edit individual fields (Minute, Hour, Day, Month, Weekday) to adjust the schedule.',
+        'Click a common preset (like "Every hour" or "Mon–Fri 9am") to apply it instantly.',
+        'Copy the final cron expression for use in Linux crontabs, AWS CloudWatch Events, GitHub Actions, or CI/CD pipelines.',
+      ],
+      about: `A **cron expression** is a string of five fields that defines a recurring schedule for automated jobs in Unix/Linux systems, cloud services, and CI/CD pipelines. The name comes from **Chronos** (Greek god of time), and the \`cron\` daemon has been a cornerstone of Unix job scheduling since the 1970s.
+
+**The 5-Field Cron Format:**
+\`\`\`
+┌────────── minute (0–59)
+│ ┌──────── hour (0–23)
+│ │ ┌────── day of month (1–31)
+│ │ │ ┌──── month (1–12 or JAN–DEC)
+│ │ │ │ ┌── day of week (0–6 = Sun–Sat)
+│ │ │ │ │
+* * * * *
+\`\`\`
+
+**Special Characters:**
+- \`*\` – Any value (wildcard). Match every possible value for that field.
+- \`,\` – List separator. e.g. \`1,3,5\` = run on Monday, Wednesday, and Friday.
+- \`-\` – Range. e.g. \`9-17\` = every hour from 9am to 5pm.
+- \`/\` – Step. e.g. \`*/15\` = every 15 minutes.
+
+**Where Cron Expressions Are Used:**
+- **Linux crontab:** System-level task scheduling for log rotation, database backups, report generation.
+- **AWS EventBridge / CloudWatch Events:** Scheduled Lambda function triggers, ECS task executions.
+- **GitHub Actions / GitLab CI:** Scheduled workflow triggers for nightly builds, dependency audits.
+- **Kubernetes CronJobs:** Periodic pod execution for batch processing.
+- **Node.js:** Libraries like node-cron and cron parse the same 5-field format.
+
+Our builder translates expressions into plain English in real time, making it easy for developers of all experience levels to verify that their schedule does exactly what they intend.`,
+      faqs: [
+        { q: 'What does "* * * * *" mean in cron?', a: '"* * * * *" means "every minute of every hour of every day of every month of every day of the week" — the most frequent possible cron schedule.' },
+        { q: 'How do I run a cron job every 15 minutes?', a: 'Use the expression "*/15 * * * *". The */ syntax means "step" — every 15-minute interval within each hour.' },
+        { q: 'What is the difference between day-of-month and day-of-week?', a: 'Day-of-month specifies which date in the calendar (1–31) to run. Day-of-week specifies which weekday (0=Sunday, 6=Saturday). If both are set, most cron daemons run when EITHER condition is true.' },
+        { q: 'Does cron support seconds?', a: 'Standard Unix cron does not support seconds (minimum resolution is 1 minute). Some extended systems like Spring Scheduler and Quartz add a 6th field for seconds.' },
+        { q: 'How do I run a job only on weekdays?', a: 'Use "0 9 * * 1-5" to run at 9:00 AM Monday through Friday (1=Monday, 5=Friday).' },
+      ],
+    },
+  },
+  {
+    slug: 'text-to-speech',
+    name: 'Text to Speech',
+    shortDescription: 'Convert any text to spoken audio using your browser\'s built-in Web Speech API — no uploads.',
+    seoTitle: 'Text to Speech Online — Free Browser-Based TTS Tool',
+    seoDescription: 'Free text to speech tool powered by the Web Speech API. Convert any text to natural audio with adjustable speed, pitch, volume, and voice selection — all in your browser.',
+    category: 'text-dev',
+    tags: ['Text to Speech', 'TTS', 'Accessibility', 'Audio', 'Speech'],
+    keywords: ['text to speech', 'tts online free', 'text to speech browser', 'web speech api', 'convert text to audio online', 'read text aloud online'],
+    icon: 'Volume2',
+    popular: true,
+    addedAt: '2026-04-01',
+    relatedSlugs: ['word-counter', 'character-counter', 'case-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Type or paste any text into the textarea.',
+        'Select a voice from the dropdown — your browser provides built-in voices for multiple languages.',
+        'Adjust Speed (0.5x–2x), Pitch (0–2), and Volume (0%–100%) to your preference.',
+        'Click the Speak button to start playback.',
+        'Click Stop at any time to interrupt the audio.',
+      ],
+      about: `The **Text to Speech** tool harnesses the **W3C Web Speech API** — a browser-native interface that converts written text into synthesized spoken audio. Unlike traditional TTS services that upload your text to remote servers and stream back audio, this tool processes everything locally inside your browser. Your text never leaves your device.
+
+**How the Web Speech API Works:**
+The \`SpeechSynthesis\` interface creates a \`SpeechSynthesisUtterance\` object containing the text, rate, pitch, volume, and voice preferences. The browser then passes this to the operating system's native speech engine:
+- **Windows:** Microsoft SAPI / Azure Neural Voices (Edge)
+- **macOS / iOS:** Apple's built-in speech synthesis (Siri voices available in Safari)
+- **Android / Chrome OS:** Google Text-to-Speech engine
+- **Linux:** eSpeak or Festival integration
+
+**Voice Selection:**
+Modern browsers expose multiple voices for different languages, accents, and genders. Chrome and Edge users typically have access to premium neural network voices. Voice availability depends on the operating system and browser.
+
+**Use Cases:**
+- **Proofreading:** Listening to your writing catches awkward phrasing and grammar errors that the eye skips over.
+- **Accessibility:** Assistive technology for users with dyslexia, visual impairments, or reading difficulties.
+- **Language Learning:** Hear correct pronunciation for foreign language text.
+- **Content Creation:** Prototype podcast scripts, voice-over copy, or narration timing.
+- **Multitasking:** Have articles, documentation, or emails read aloud while doing other work.
+
+**Speed and Pitch Control:**
+The rate control adjusts speech speed (0.1x to 10x, recommended 0.5x–2x for natural output). Pitch control modifies the fundamental frequency of the voice — lower values produce deeper tones, higher values produce a higher-pitched voice.`,
+      faqs: [
+        { q: 'Does this tool upload my text to any server?', a: 'No. The Web Speech API runs entirely within your browser using the operating system\'s native speech engine. Your text never leaves your device.' },
+        { q: 'Why can\'t I hear any audio?', a: 'Ensure your browser supports the Web Speech API (Chrome and Edge have the best support), your device volume is not muted, and try refreshing the page to reload available voices.' },
+        { q: 'How many voices are available?', a: 'Voice count varies by browser and operating system. Chrome on Windows typically offers 20–60+ voices. Some are offline; others require an internet connection to stream neural voices.' },
+        { q: 'Can I use this for accessibility purposes?', a: 'Yes. This tool is well-suited for users with dyslexia, low vision, or reading difficulties who benefit from hearing text read aloud in real time.' },
+        { q: 'Which browsers support the Web Speech API?', a: 'Chrome (best support), Edge, Safari (macOS and iOS), and Firefox (limited). Internet Explorer does not support it.' },
+      ],
+    },
+  },
 ];
 
 export const POPULAR_TOOLS = TOOLS.filter((t) => t.popular);

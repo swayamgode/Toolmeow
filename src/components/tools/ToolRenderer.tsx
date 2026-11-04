@@ -65,6 +65,22 @@ const toolComponents: Record<string, React.ComponentType<any>> = {
     import('@/features/html-entity-converter/HtmlEntityConverterTool').then((m) => m.HtmlEntityConverterTool), { ssr: false }),
   'jwt-decoder': dynamic(() =>
     import('@/features/jwt-decoder/JwtDecoderTool').then((m) => m.JwtDecoderTool), { ssr: false }),
+  'number-base-converter': dynamic(() =>
+    import('@/features/number-base-converter/NumberBaseConverterTool').then((m) => m.NumberBaseConverterTool), { ssr: false }),
+  'morse-code-converter': dynamic(() =>
+    import('@/features/morse-code-converter/MorseCodeConverterTool').then((m) => m.MorseCodeConverterTool), { ssr: false }),
+  'aspect-ratio-calculator': dynamic(() =>
+    import('@/features/aspect-ratio-calculator/AspectRatioCalculatorTool').then((m) => m.AspectRatioCalculatorTool), { ssr: false }),
+  'css-gradient-generator': dynamic(() =>
+    import('@/features/css-gradient-generator/CssGradientGeneratorTool').then((m) => m.CssGradientGeneratorTool), { ssr: false }),
+  'random-number-generator': dynamic(() =>
+    import('@/features/random-number-generator/RandomNumberGeneratorTool').then((m) => m.RandomNumberGeneratorTool), { ssr: false }),
+  'character-counter': dynamic(() =>
+    import('@/features/character-counter/CharacterCounterTool').then((m) => m.CharacterCounterTool), { ssr: false }),
+  'cron-expression-builder': dynamic(() =>
+    import('@/features/cron-expression-builder/CronExpressionBuilderTool').then((m) => m.CronExpressionBuilderTool), { ssr: false }),
+  'text-to-speech': dynamic(() =>
+    import('@/features/text-to-speech/TextToSpeechTool').then((m) => m.TextToSpeechTool), { ssr: false }),
 };
 
 export function ToolRenderer({ slug }: { slug: string }) {

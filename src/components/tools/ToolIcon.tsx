@@ -31,6 +31,14 @@ import {
   Link2,
   Code,
   Key,
+  Hash,
+  Radio,
+  Ratio,
+  Paintbrush2,
+  Shuffle,
+  AlignLeft,
+  Calendar,
+  Volume2,
   type LucideProps,
 } from 'lucide-react';
 
@@ -65,6 +73,14 @@ const iconMap: Record<string, React.FC<LucideProps>> = {
   Link2,
   Code,
   Key,
+  Hash,
+  Radio,
+  Ratio,
+  Paintbrush2,
+  Shuffle,
+  AlignLeft,
+  Calendar,
+  Volume2,
 };
 
 export interface ToolIconProps extends LucideProps {

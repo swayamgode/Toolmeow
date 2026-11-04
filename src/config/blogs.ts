@@ -606,6 +606,152 @@ export const BLOG_POSTS: BlogPost[] = [
   ],
   "content": "## Overview\n\nA **JSON Web Token** (JWT, pronounced \"jot\") is an open, industry-standard **RFC 7519** method for securely representing claims between two parties. JWTs are widely used in modern web applications for user authentication, Single Sign-On (SSO), and API authorization.\n\nOur **JWT Decoder** parses and formats JSON Web Tokens locally in your browser. Unlike third-party online debuggers that post your authorization tokens over the web, our tool never transmits or logs your credentials.\n\n---\n\n## The Three Parts of a JWT\n\nA standard JWT is composed of three parts separated by periods (`.`):\n```\n<Header>.<Payload>.<Signature>\n```\n\n### 1. Header\nThe header contains metadata regarding the token type and the cryptographic signing algorithm being used (such as HS256 HMAC SHA-256 or RS256 RSA Signature):\n```json\n{\n  \"alg\": \"HS256\",\n  \"typ\": \"JWT\"\n}\n```\n\n### 2. Payload (Claims)\nThe payload contains the actual claims—statements about an entity (typically the authenticated user) and additional metadata:\n```json\n{\n  \"sub\": \"user_12345\",\n  \"name\": \"Alex Smith\",\n  \"role\": \"admin\",\n  \"iat\": 1700000000,\n  \"exp\": 1700003600\n}\n```\n\n### 3. Signature\nThe signature is created by hashing the Base64Url-encoded header and payload with a secret key or private key. It verifies that the token sender is authentic and that the payload has not been modified.\n\n---\n\n## Standard Registered Claims\n\n- **iss (Issuer)**: The identity provider or authority that issued the token.\n- **sub (Subject)**: The principal identity (usually user ID).\n- **aud (Audience)**: The intended recipient service for the token.\n- **exp (Expiration Time)**: Unix epoch timestamp after which the token is invalid.\n- **nbf (Not Before)**: The time before which the token must not be accepted.\n- **iat (Issued At)**: Timestamp when the token was generated.\n\n---\n\n## Important Security Warning: Decoding vs. Verifying\n\nA JWT is **encoded**, not **encrypted** (unless using JWE). Anyone with access to a JWT can easily decode its Base64Url parts to read the payload. \n- Never store sensitive data like plaintext passwords, API keys, or credit card numbers in a JWT payload.\n- In production backends, always cryptographically verify the signature before trusting claims."
 }
+,
+  {
+  "slug": "number-base-converter-guide",
+  "toolSlug": "number-base-converter",
+  "title": "The Complete Guide to Number Base Conversion: Binary, Octal, Decimal & Hex",
+  "seoTitle": "Number Base Converter Guide: Binary, Hex & Octal Explained",
+  "seoDescription": "Learn how to convert between binary, octal, decimal, and hexadecimal. Understand positional numeral systems, bit representations, and programmer math.",
+  "readTime": "6 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "number base converter",
+    "binary to decimal",
+    "hex converter",
+    "octal to binary",
+    "base conversion guide"
+  ],
+  "content": "## Overview\n\nA **number base** (or radix) defines how many distinct digit symbols a positional numeral system uses. The four bases most relevant to computing are decimal (base 10), binary (base 2), octal (base 8), and hexadecimal (base 16). Our **Number Base Converter** translates between all four instantly in your browser.\n\n---\n\n## Why Computers Use Binary\n\nComputers are built from billions of transistors — electronic switches that are either ON (1) or OFF (0). This binary nature makes base 2 the natural language of hardware. Every character, number, image, and instruction your computer processes is ultimately stored as a sequence of 1s and 0s.\n\n---\n\n## The Four Essential Bases\n\n### Decimal (Base 10)\nThe human-native numeral system. Digits: 0–9. Each position represents a power of 10.\n\n### Binary (Base 2)\nComputer hardware native. Digits: 0 and 1. Each position represents a power of 2.\n- Example: 42 in decimal = 101010 in binary (32+8+2).\n\n### Octal (Base 8)\nDigits: 0–7. Each octal digit maps exactly to 3 binary bits. Used in Unix file permissions (chmod 755).\n\n### Hexadecimal (Base 16)\nDigits: 0–9 and A–F. Each hex digit maps to exactly 4 binary bits. Used for web colors (#FF5733), memory addresses, and byte values.\n\n---\n\n## Step-by-Step Conversion\n\n### Decimal to Binary\nDivide the number by 2 repeatedly, record the remainders bottom-up.\n- 42 ÷ 2 = 21 R0\n- 21 ÷ 2 = 10 R1\n- 10 ÷ 2 = 5 R0\n- 5 ÷ 2 = 2 R1\n- 2 ÷ 2 = 1 R0\n- 1 ÷ 2 = 0 R1\n- Reading remainders upward: **101010**\n\n### Binary to Decimal\nMultiply each bit by its positional power of 2 and sum.\n- 101010 = 1×32 + 0×16 + 1×8 + 0×4 + 1×2 + 0×1 = **42**\n\n---\n\n## Frequently Asked Questions\n\n### What is hexadecimal used for?\nHex is used for web color codes (#RRGGBB), memory addresses, byte-level data, and bitmask values.\n\n### How do Unix file permissions use octal?\nEach rwx permission triplet maps to 3 bits: read=4, write=2, execute=1. chmod 755 = 111 101 101 in binary.\n\n### What is Number.MAX_SAFE_INTEGER?\nIt is 2^53 - 1 = 9,007,199,254,740,991 — the largest integer JavaScript can represent exactly in floating-point.\n\n### Why is F the last digit in hex?\nHexadecimal needs 16 symbols. After 0–9 (10 symbols), letters A–F represent values 10–15, completing the set.\n\n### Can negative numbers be represented in binary?\nYes, using two's complement. Most computer architectures use two's complement to represent signed integers."
+},
+  {
+  "slug": "morse-code-converter-guide",
+  "toolSlug": "morse-code-converter",
+  "title": "The Complete Guide to Morse Code: History, Alphabet & Online Conversion",
+  "seoTitle": "Morse Code Converter Guide: Encode & Decode Dots and Dashes",
+  "seoDescription": "Discover the history and mechanics of Morse code. Learn how to encode and decode text using dots and dashes with our free online Morse code translator.",
+  "readTime": "6 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "morse code guide",
+    "text to morse code",
+    "morse alphabet",
+    "morse code history",
+    "decode morse online"
+  ],
+  "content": "## Overview\n\n**Morse code** is a character-encoding system that represents letters, digits, and punctuation as standardized sequences of short signals (dots •) and long signals (dashes —). Developed in the 1830s alongside the electrical telegraph, it became one of the most significant communication breakthroughs in human history.\n\nOur **Morse Code Converter** instantly translates between plain text and Morse code in your browser with zero data transmission.\n\n---\n\n## A Brief History\n\n**Samuel Morse** and **Alfred Vail** developed Morse code in the 1830s to transmit messages over the telegraph — the first long-distance electrical communication system. The first official telegraph line in the US, running from Washington D.C. to Baltimore, was demonstrated in 1844 with the famous message: *\"What hath God wrought?\"*\n\nBy the late 19th century, undersea telegraph cables connected continents, revolutionizing global commerce, diplomacy, and journalism.\n\n---\n\n## The International Morse Code Alphabet\n\nMorse assigned shorter codes to more frequently used letters, minimizing transmission time:\n\n| Letter | Code | Letter | Code |\n|:---:|:---:|:---:|:---:|\n| A | .- | N | -. |\n| B | -... | O | --- |\n| C | -.-. | P | .--. |\n| E | . | S | ... |\n| T | - | W | .-- |\n\nThe letter E (most common in English) is a single dot — the shortest possible code.\n\n---\n\n## Practical Applications Today\n\nMorse code remains actively used in:\n1. **Amateur (ham) radio** — required for some radio licenses.\n2. **Aviation navigation beacons** — transmit airport IDs in Morse.\n3. **Military communications** — backup channel when electronics fail.\n4. **Accessibility** — single-switch interfaces allow Morse input for people with motor disabilities.\n\n---\n\n## Frequently Asked Questions\n\n### What is SOS in Morse code?\nSOS is ... — — — ... (3 dots, 3 dashes, 3 dots). It was chosen because it is easy to transmit, recognize, and remember — not because it stands for specific words.\n\n### How are words separated in Morse?\nCharacters within a word are separated by a single space. Words are separated by a forward slash (/). Our encoder uses this convention.\n\n### Is Morse code still taught?\nAmateur radio operators worldwide still learn and use Morse code. Some militaries continue to teach it as a resilient backup communications method.\n\n### How fast can Morse code be transmitted?\nSkilled operators can transmit 20–30 words per minute (WPM). Competitive operators can reach 50+ WPM.\n\n### Can Morse code be transmitted without a telegraph?\nYes — via sound beeps, flashlights, mirror flashes, flag signals (semaphore), or any binary on/off medium."
+},
+  {
+  "slug": "aspect-ratio-calculator-guide",
+  "toolSlug": "aspect-ratio-calculator",
+  "title": "The Complete Guide to Aspect Ratios: 16:9, 4:3, 1:1 and How to Scale Images",
+  "seoTitle": "Aspect Ratio Calculator Guide: 16:9, 4:3 & Image Scaling Explained",
+  "seoDescription": "Master aspect ratios for images, videos, and screens. Learn what 16:9 means, how GCD simplification works, and how to scale dimensions without distortion.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-04-01",
+  "category": "image",
+  "keywords": [
+    "aspect ratio guide",
+    "16:9 aspect ratio",
+    "image scaling",
+    "aspect ratio calculator",
+    "resize without distortion"
+  ],
+  "content": "## Overview\n\nThe **aspect ratio** of an image, screen, or video is the proportional relationship between its width and height, written as W:H. Getting aspect ratios correct prevents distortion and ensures professional results in web design, video production, and print media.\n\nOur **Aspect Ratio Calculator** finds the simplified ratio and scales dimensions proportionally — entirely in your browser.\n\n---\n\n## Common Aspect Ratios and When to Use Them\n\n| Ratio | Use Cases |\n|:---:|:---|\n| 16:9 | HD/4K video, YouTube, TV, most monitors |\n| 4:3 | Old TV, presentations, some tablets |\n| 1:1 | Instagram square posts, profile photos |\n| 9:16 | TikTok, Instagram Reels, YouTube Shorts |\n| 21:9 | Cinema, ultra-wide gaming monitors |\n| 3:2 | DSLR cameras (35mm film standard) |\n| 4:5 | Instagram portrait posts |\n\n---\n\n## How the GCD Simplification Works\n\nThe tool uses the **Greatest Common Divisor (GCD)** algorithm to reduce width and height to their simplest integer ratio.\n\nFor 1920×1080:\n- GCD(1920, 1080) = 120\n- 1920 ÷ 120 = **16**\n- 1080 ÷ 120 = **9**\n- Result: **16:9**\n\nFor 800×600:\n- GCD(800, 600) = 200\n- 800 ÷ 200 = **4**\n- 600 ÷ 200 = **3**\n- Result: **4:3**\n\n---\n\n## Scaling Without Distortion\n\nTo scale an image to a new width while preserving aspect ratio:\n\nNew Height = (Target Width × Original Height) / Original Width\n\nExample: Scale 1920×1080 to 1280px wide:\n- New Height = (1280 × 1080) / 1920 = **720**\n- Result: **1280×720** (still 16:9)\n\n---\n\n## Frequently Asked Questions\n\n### What aspect ratio is best for YouTube videos?\n16:9 (1920×1080 or 3840×2160) is the standard for YouTube. Videos in other ratios get letterboxed or pillarboxed.\n\n### What is the Instagram post aspect ratio?\nSquare posts: 1:1. Portrait posts: 4:5. Stories and Reels: 9:16 (1080×1920).\n\n### Does aspect ratio affect image file size?\nAspect ratio alone does not affect file size — the resolution (total pixel count) does. A 1:1 image at 1000×1000 is 1 megapixel; a 16:9 at 1920×1080 is about 2.07 megapixels.\n\n### How do I maintain aspect ratio in CSS?\nUse the aspect-ratio CSS property: `aspect-ratio: 16 / 9;`. Or use the padding-top trick: `padding-top: 56.25%;` for 16:9 containers.\n\n### Why do videos have black bars?\nBlack bars (letterbox or pillarbox) appear when the video aspect ratio does not match the player or screen ratio."
+},
+  {
+  "slug": "css-gradient-generator-guide",
+  "toolSlug": "css-gradient-generator",
+  "title": "The Complete Guide to CSS Gradients: Linear, Radial & Conic with Examples",
+  "seoTitle": "CSS Gradient Generator Guide: Linear, Radial & Conic Examples",
+  "seoDescription": "Learn how to create CSS gradients from scratch. Full reference for linear-gradient, radial-gradient, and conic-gradient syntax with copy-ready code examples.",
+  "readTime": "7 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "css gradient guide",
+    "linear-gradient css",
+    "radial gradient tutorial",
+    "css background gradient",
+    "conic gradient css"
+  ],
+  "content": "## Overview\n\n**CSS gradients** create smooth color transitions directly in the browser using pure CSS — no image files required. They scale infinitely without pixelation and reduce page load by eliminating image HTTP requests.\n\nOur **CSS Gradient Generator** provides a visual builder with live preview for all three gradient types.\n\n---\n\n## Linear Gradient\n\nThe most common type. Colors transition along a straight directional line.\n\n**Syntax:**\n```css\nbackground: linear-gradient(direction, color-stop1, color-stop2, ...);\n```\n\n**Examples:**\n```css\n/* Top to bottom (default) */\nbackground: linear-gradient(#6d28d9, #ec4899);\n\n/* Left to right */\nbackground: linear-gradient(to right, #6d28d9, #ec4899);\n\n/* 135-degree diagonal */\nbackground: linear-gradient(135deg, #6d28d9 0%, #2563eb 50%, #ec4899 100%);\n```\n\n---\n\n## Radial Gradient\n\nColors radiate outward from a central point.\n\n```css\n/* Circle shape */\nbackground: radial-gradient(circle, #6d28d9, #ec4899);\n\n/* Ellipse with position */\nbackground: radial-gradient(ellipse at top left, #6d28d9, #ec4899);\n```\n\n---\n\n## Conic Gradient\n\nColors rotate around a center point like a pie chart or color wheel.\n\n```css\n/* Pie chart style */\nbackground: conic-gradient(#6d28d9 25%, #2563eb 25% 50%, #ec4899 50% 75%, #f59e0b 75%);\n\n/* Color wheel */\nbackground: conic-gradient(red, yellow, green, blue, red);\n```\n\n---\n\n## Color Stops\n\nAdd multiple colors at specific positions:\n```css\nbackground: linear-gradient(135deg,\n  #6d28d9 0%,    /* violet at 0% */\n  #2563eb 40%,   /* blue at 40% */\n  #ec4899 100%   /* pink at 100% */\n);\n```\n\n---\n\n## Frequently Asked Questions\n\n### Do CSS gradients work in all browsers?\nLinear and radial gradients are universally supported. Conic gradients require Chrome 69+, Safari 12.1+, Firefox 83+, and Edge 79+.\n\n### Can I animate CSS gradients?\nGradients themselves cannot be directly transitioned. Workarounds include animating background-position on a large gradient or using opacity transitions between gradient layers.\n\n### How do I create a gradient text effect?\nApply the gradient to background, then use background-clip: text; color: transparent; to show the gradient through the text shape.\n\n### Can I use CSS gradients as borders?\nYes, using border-image: linear-gradient(...) 1; on an element.\n\n### What is the difference between to right and 90deg?\nThey are identical. `to right` = 90 degrees. `to bottom` = 180 degrees (the default). `to top right` = 45 degrees."
+},
+  {
+  "slug": "random-number-generator-guide",
+  "toolSlug": "random-number-generator",
+  "title": "The Complete Guide to Random Number Generation: PRNG vs CSPRNG & Use Cases",
+  "seoTitle": "Random Number Generator Guide: PRNG vs CSPRNG & Best Practices",
+  "seoDescription": "Understand how random number generators work. Learn the difference between pseudo-random and cryptographically secure RNGs, and when to use each.",
+  "readTime": "6 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "random number generator guide",
+    "csprng vs prng",
+    "cryptographically secure random",
+    "web crypto api random",
+    "random number statistics"
+  ],
+  "content": "## Overview\n\nRandom number generation (RNG) is fundamental to cryptography, statistics, gaming, scientific simulation, and fair selection processes. Our **Random Number Generator** uses the browser's cryptographically secure Web Crypto API to generate unpredictable numbers with zero data upload.\n\n---\n\n## Pseudo-Random vs. Cryptographically Secure\n\n### Pseudo-Random Number Generators (PRNG)\nPRNGs like Math.random() use deterministic algorithms seeded by a value (often the current time). They produce sequences that appear random but are mathematically predictable if the seed is known. PRNGs are fast and adequate for simulations and games, but **never use them for security purposes**.\n\n### Cryptographically Secure PRNGs (CSPRNG)\nCSPRNGs use hardware entropy sources (CPU timing jitter, mouse movements, thermal noise) to generate unpredictable values. The Web Crypto API's crypto.getRandomValues() is a CSPRNG.\n\n**Our tool uses crypto.getRandomValues() — the same API used for TLS encryption and password generation.**\n\n---\n\n## The Statistics of Randomness\n\n### Uniform Distribution\nA good RNG produces numbers with equal probability across the range. Each integer from 1 to 100 has exactly a 1% chance of appearing.\n\n### Sampling Without Replacement (Unique Mode)\nWhen unique mode is enabled, each draw is equivalent to pulling a ball from an urn and not returning it. This guarantees no repeats — essential for fair lottery draws and random sampling.\n\n---\n\n## Real-World Use Cases\n\n| Application | Range | Count | Unique |\n|:---|:---:|:---:|:---:|\n| Lottery numbers (6/49) | 1–49 | 6 | Yes |\n| D20 dice roll | 1–20 | 1 | No |\n| Random survey sample (100 from 1000) | 1–1000 | 100 | Yes |\n| Random password seed | 0–255 | 16 | No |\n\n---\n\n## Frequently Asked Questions\n\n### Is Math.random() safe for passwords?\nNo. Math.random() is a PRNG — it is predictable. Always use crypto.getRandomValues() or a CSPRNG for security-sensitive applications.\n\n### How does sampling without replacement work?\nEach generated number is added to a set. If a duplicate is generated, it is discarded and a new number is drawn. This continues until the required unique count is reached.\n\n### What is the birthday paradox?\nThe birthday paradox shows that in a group of just 23 people, there is a 50% chance two share a birthday. This demonstrates why collision probability is surprisingly high with moderate set sizes.\n\n### Can I generate random floats?\nYes. Set the Decimals field to 1–10 to generate floating-point numbers with the specified precision within your chosen range.\n\n### Is this tool suitable for scientific Monte Carlo simulations?\nYes for browser-based demonstrations. For high-performance scientific computing, server-side CSPRNGs with higher throughput are recommended."
+},
+  {
+  "slug": "character-counter-guide",
+  "toolSlug": "character-counter",
+  "title": "The Complete Guide to Character Counting: Text Analysis, Frequency & Writing Tips",
+  "seoTitle": "Character Counter Guide: Text Analysis, Frequency & Word Stats",
+  "seoDescription": "Master character counting for social media, SEO, and writing. Learn about character limits, word frequency analysis, reading time estimation, and text statistics.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "character counter guide",
+    "character count limits",
+    "word frequency analysis",
+    "reading time calculator",
+    "text statistics tool"
+  ],
+  "content": "## Overview\n\nThe **Character Counter** analyzes any text to provide total character counts, word statistics, sentence and paragraph counts, character frequency tables, and estimated reading time. All processing is instant and 100% client-side.\n\n---\n\n## Platform Character Limits You Need to Know\n\n| Platform | Limit |\n|:---|:---:|\n| Twitter / X post | 280 characters |\n| Twitter / X bio | 160 characters |\n| LinkedIn post | 3,000 characters |\n| LinkedIn headline | 220 characters |\n| Instagram caption | 2,200 characters |\n| Instagram bio | 150 characters |\n| Facebook post | 63,206 characters |\n| YouTube title | 100 characters |\n| YouTube description | 5,000 characters |\n| SMS message | 160 characters (single), 1,600 (concatenated) |\n| Google meta description | 155–160 characters |\n| Google title tag | 50–60 characters |\n\n---\n\n## Character Frequency Analysis\n\nThe tool shows the top 10 most frequent characters with counts and percentages. In standard English text, expected frequencies are:\n\n- **E** — ~12.7% of letters\n- **T** — ~9.1%\n- **A** — ~8.2%\n- **O** — ~7.5%\n- **I** — ~7.0%\n\n**Why this matters:** Frequency analysis is used in cryptography to break substitution ciphers. It is also used in typography for optimal kerning pair selection.\n\n---\n\n## Reading Time Estimation\n\nReading time is calculated at **200 words per minute** — the average adult silent reading speed. For comparison:\n- Speaking speed: ~130 words per minute\n- Speed reading: 400–700 words per minute\n\nA 1,000-word blog post takes approximately **5 minutes** to read, which is why the \"5-min read\" label is common on Medium and other publishing platforms.\n\n---\n\n## Frequently Asked Questions\n\n### Does character count include spaces?\nYes, the total count includes all characters including spaces, punctuation, and newlines. The tool shows a separate spaces count.\n\n### What counts as a word?\nWords are sequences of characters separated by whitespace. Hyphenated words like \"well-known\" count as one word.\n\n### How is paragraph count determined?\nParagraphs are counted by blank lines (double newlines). Single newlines within a paragraph are not counted as paragraph breaks.\n\n### Why is reading time different from speaking time?\nHumans read silently faster than they speak aloud. Reading averages 200 WPM; natural speaking averages 130 WPM; podcasts and audiobooks typically target 150–160 WPM.\n\n### Can I use this for checking SEO meta descriptions?\nYes. Keep meta descriptions between 150–160 characters and titles between 50–60 characters for optimal Google display."
+},
+  {
+  "slug": "cron-expression-builder-guide",
+  "toolSlug": "cron-expression-builder",
+  "title": "The Complete Guide to Cron Expressions: Syntax, Presets & Best Practices",
+  "seoTitle": "Cron Expression Guide: Syntax, Examples & Schedule Builder",
+  "seoDescription": "Master cron job scheduling. Full reference for cron syntax, special characters, common presets, and how to schedule tasks in Linux, AWS, and GitHub Actions.",
+  "readTime": "7 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "cron expression guide",
+    "cron syntax reference",
+    "cron job examples",
+    "linux crontab",
+    "aws cron expression",
+    "github actions schedule"
+  ],
+  "content": "## Overview\n\nA **cron expression** is a 5-field string that defines a recurring schedule for automated tasks. It is the standard scheduling format for Linux crontab, AWS EventBridge, GitHub Actions, Kubernetes CronJobs, and many CI/CD platforms.\n\nOur **Cron Expression Builder** generates and explains cron schedules in plain English with zero server interaction.\n\n---\n\n## The 5-Field Format\n\n```\n┌────────── minute       (0–59)\n│ ┌──────── hour         (0–23)\n│ │ ┌────── day of month (1–31)\n│ │ │ ┌──── month        (1–12)\n│ │ │ │ ┌── day of week  (0–6, Sun=0)\n│ │ │ │ │\n* * * * *\n```\n\n---\n\n## Special Characters\n\n| Character | Meaning | Example | Explanation |\n|:---:|:---|:---:|:---|\n| `*` | Any value | `* * * * *` | Every minute |\n| `,` | List | `1,3,5` | Hours 1, 3, and 5 |\n| `-` | Range | `9-17` | Hours 9 through 17 |\n| `/` | Step | `*/15` | Every 15 minutes |\n\n---\n\n## Common Cron Presets\n\n| Schedule | Expression | Description |\n|:---|:---:|:---|\n| Every minute | `* * * * *` | Runs every minute |\n| Every hour | `0 * * * *` | Runs at minute 0 of every hour |\n| Daily at midnight | `0 0 * * *` | Runs at 00:00 every day |\n| Daily at noon | `0 12 * * *` | Runs at 12:00 every day |\n| Weekdays at 9am | `0 9 * * 1-5` | Mon–Fri at 09:00 |\n| Every 15 minutes | `*/15 * * * *` | 4 times per hour |\n| First of month | `0 0 1 * *` | Midnight on the 1st |\n| Every Sunday | `0 0 * * 0` | Midnight every Sunday |\n\n---\n\n## Platform Differences\n\n**Linux crontab:** Standard 5-field format. Edit with `crontab -e`.\n\n**AWS EventBridge/CloudWatch:** Uses a 6-field format with seconds OR uses a cron() wrapper: `cron(0 9 ? * MON-FRI *)`.\n\n**GitHub Actions:** Uses 5-field format in the `schedule` trigger: `on: schedule: - cron: '0 9 * * 1-5'`. Minimum interval is every 5 minutes.\n\n**Kubernetes CronJob:** Standard 5-field format in the schedule field.\n\n---\n\n## Frequently Asked Questions\n\n### What does \"* * * * *\" mean?\nIt runs every single minute of every hour of every day — the most frequent possible cron schedule.\n\n### How do I run a job every 30 minutes?\nUse `*/30 * * * *` to run at minute 0 and minute 30 of every hour.\n\n### Can I combine ranges and lists?\nYes. `0 9,17 * * 1-5` runs at 9am and 5pm on weekdays.\n\n### Why use ? instead of * in some cron systems?\nAWS and Quartz-based systems use ? to indicate \"no specific value\" for day-of-month or day-of-week when the other is specified — avoiding ambiguity.\n\n### What is the minimum cron interval in GitHub Actions?\nGitHub Actions enforces a minimum schedule interval of 5 minutes (`*/5 * * * *`)."
+},
+  {
+  "slug": "text-to-speech-guide",
+  "toolSlug": "text-to-speech",
+  "title": "The Complete Guide to Text to Speech: Web Speech API, Voices & Accessibility",
+  "seoTitle": "Text to Speech Guide: Web Speech API, Voices & Accessibility Tips",
+  "seoDescription": "Learn how browser-native text to speech works via the Web Speech API. Discover voice options, rate and pitch controls, and TTS best practices for accessibility.",
+  "readTime": "6 min read",
+  "publishedAt": "2026-04-01",
+  "category": "text-dev",
+  "keywords": [
+    "text to speech guide",
+    "web speech api tutorial",
+    "tts browser",
+    "speech synthesis api",
+    "text to speech accessibility"
+  ],
+  "content": "## Overview\n\nThe **Web Speech API** is a browser-native interface that allows web applications to convert text to speech (TTS) and perform speech recognition — without plugins, server round trips, or paid APIs. Our **Text to Speech** tool harnesses this API to read any text aloud with adjustable speed, pitch, and volume.\n\n---\n\n## How the Web Speech API Works\n\nThe SpeechSynthesis interface creates a SpeechSynthesisUtterance object, configures voice parameters, and passes it to the operating system's native speech engine:\n\n| Platform | Speech Engine |\n|:---|:---|\n| Windows (Chrome/Edge) | Microsoft SAPI / Azure Neural Voices |\n| macOS (Safari/Chrome) | Apple Speech Synthesis / Siri voices |\n| Android (Chrome) | Google Text-to-Speech engine |\n| Linux | eSpeak-ng or Festival |\n\n---\n\n## Voice Controls Explained\n\n**Rate (Speed):** Controls words per minute. Default 1.0 = natural speed. Use 0.75 for language learning, 1.5–2.0 for speed listening.\n\n**Pitch:** Modifies fundamental frequency. 1.0 = natural. < 1.0 = deeper/slower. > 1.0 = higher/faster.\n\n**Volume:** Audio amplitude from 0 (silent) to 1 (full volume).\n\n---\n\n## Best Use Cases for Text to Speech\n\n1. **Proofreading:** Hearing your writing exposes awkward phrasing and missed words the eye skips.\n2. **Language learning:** Hear correct pronunciation for foreign-language text in your target language's native voice.\n3. **Accessibility:** Essential assistive technology for dyslexia, visual impairment, and motor disabilities.\n4. **Multitasking:** Have documentation, articles, or emails read aloud while your hands are occupied.\n5. **Content creation:** Prototype podcast scripts and estimate narration timing before recording.\n6. **Reading assistance:** Help younger readers follow along with text at an appropriate pace.\n\n---\n\n## Browser Compatibility\n\n| Browser | Support |\n|:---|:---|\n| Chrome (desktop) | Excellent — most voices, offline support |\n| Edge | Excellent — includes Azure neural voices |\n| Safari (macOS/iOS) | Good — Siri voices available |\n| Firefox | Basic support |\n| Chrome (Android) | Good |\n\n---\n\n## Frequently Asked Questions\n\n### Why do I hear different voices on different browsers?\nVoice availability depends on the operating system and browser. Chrome/Edge on Windows typically provide 20–60+ voices. Safari uses Apple's built-in voices.\n\n### Does text to speech work offline?\nBuilt-in system voices (marked as \"local\" in the voice list) work fully offline. Some premium neural voices require an internet connection to stream.\n\n### Can text to speech read multiple languages?\nYes. Select a voice for your target language in the voice dropdown, and the speech engine will read the text in that language's phonology.\n\n### Is this tool WCAG accessible?\nYes. The tool is built with semantic HTML, labeled controls, and keyboard operability — following WCAG 2.1 AA guidelines.\n\n### How do I make TTS speak faster for productivity?\nSet rate to 1.5 or 2.0. With practice, comprehension at 1.5–2x speed becomes natural within a few days of regular use."
+}
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
