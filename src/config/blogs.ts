@@ -752,6 +752,149 @@ export const BLOG_POSTS: BlogPost[] = [
   ],
   "content": "## Overview\n\nThe **Web Speech API** is a browser-native interface that allows web applications to convert text to speech (TTS) and perform speech recognition — without plugins, server round trips, or paid APIs. Our **Text to Speech** tool harnesses this API to read any text aloud with adjustable speed, pitch, and volume.\n\n---\n\n## How the Web Speech API Works\n\nThe SpeechSynthesis interface creates a SpeechSynthesisUtterance object, configures voice parameters, and passes it to the operating system's native speech engine:\n\n| Platform | Speech Engine |\n|:---|:---|\n| Windows (Chrome/Edge) | Microsoft SAPI / Azure Neural Voices |\n| macOS (Safari/Chrome) | Apple Speech Synthesis / Siri voices |\n| Android (Chrome) | Google Text-to-Speech engine |\n| Linux | eSpeak-ng or Festival |\n\n---\n\n## Voice Controls Explained\n\n**Rate (Speed):** Controls words per minute. Default 1.0 = natural speed. Use 0.75 for language learning, 1.5–2.0 for speed listening.\n\n**Pitch:** Modifies fundamental frequency. 1.0 = natural. < 1.0 = deeper/slower. > 1.0 = higher/faster.\n\n**Volume:** Audio amplitude from 0 (silent) to 1 (full volume).\n\n---\n\n## Best Use Cases for Text to Speech\n\n1. **Proofreading:** Hearing your writing exposes awkward phrasing and missed words the eye skips.\n2. **Language learning:** Hear correct pronunciation for foreign-language text in your target language's native voice.\n3. **Accessibility:** Essential assistive technology for dyslexia, visual impairment, and motor disabilities.\n4. **Multitasking:** Have documentation, articles, or emails read aloud while your hands are occupied.\n5. **Content creation:** Prototype podcast scripts and estimate narration timing before recording.\n6. **Reading assistance:** Help younger readers follow along with text at an appropriate pace.\n\n---\n\n## Browser Compatibility\n\n| Browser | Support |\n|:---|:---|\n| Chrome (desktop) | Excellent — most voices, offline support |\n| Edge | Excellent — includes Azure neural voices |\n| Safari (macOS/iOS) | Good — Siri voices available |\n| Firefox | Basic support |\n| Chrome (Android) | Good |\n\n---\n\n## Frequently Asked Questions\n\n### Why do I hear different voices on different browsers?\nVoice availability depends on the operating system and browser. Chrome/Edge on Windows typically provide 20–60+ voices. Safari uses Apple's built-in voices.\n\n### Does text to speech work offline?\nBuilt-in system voices (marked as \"local\" in the voice list) work fully offline. Some premium neural voices require an internet connection to stream.\n\n### Can text to speech read multiple languages?\nYes. Select a voice for your target language in the voice dropdown, and the speech engine will read the text in that language's phonology.\n\n### Is this tool WCAG accessible?\nYes. The tool is built with semantic HTML, labeled controls, and keyboard operability — following WCAG 2.1 AA guidelines.\n\n### How do I make TTS speak faster for productivity?\nSet rate to 1.5 or 2.0. With practice, comprehension at 1.5–2x speed becomes natural within a few days of regular use."
 }
+,
+  {
+  "slug": "bmi-calculator-guide",
+  "toolSlug": "bmi-calculator",
+  "title": "The Complete Guide to BMI: Formulas, Categories & Healthy Weight",
+  "seoTitle": "BMI Calculator Guide: Formulas, Categories & Ideal Weight",
+  "seoDescription": "Learn how BMI is calculated with metric and imperial formulas. Understand BMI categories, limitations, and how to find your ideal weight range.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "finance",
+  "keywords": [
+    "bmi calculator guide",
+    "body mass index formula",
+    "healthy weight bmi",
+    "bmi categories chart"
+  ],
+  "content": "## Overview\n\nThe Body Mass Index (BMI) is a screening measure calculated from weight and height to categorize individuals into weight status groups.\n\n---\n\n## BMI Formulas\n\n**Metric:** BMI = weight (kg) divided by height squared (m)\n**Imperial:** BMI = 703 times weight (lbs) divided by height squared (inches)\n\nExample: 70 kg, 175 cm -> BMI = 70 / (1.75)^2 = 22.9 (Normal weight)\n\n---\n\n## BMI Categories (WHO)\n\n- Underweight: BMI < 18.5\n- Normal weight: BMI 18.5 - 24.9\n- Overweight: BMI 25 - 29.9\n- Obese Class I: BMI 30 - 34.9\n- Obese Class II: BMI 35 - 39.9\n- Obese Class III: BMI >= 40\n\n---\n\n## Ideal Weight Calculation\n\nIdeal weight range = BMI 18.5 to 24.9 for your height.\nFor 175 cm: 18.5 x 1.75^2 = 56.6 kg to 24.9 x 1.75^2 = 76.2 kg.\n\n---\n\n## Limitations of BMI\n\nBMI does not measure body fat directly. Athletes with high muscle mass may be classified as overweight despite low body fat. Older adults with low muscle mass may be classified as normal despite high fat percentage. Always consult a healthcare professional for personalized assessment.\n\n---\n\n## Frequently Asked Questions\n\n### Is 25 BMI overweight?\nYes, a BMI of 25.0 or above is classified as overweight by WHO standards. However, this is a statistical population threshold, not a clinical diagnosis.\n\n### What BMI is considered obese?\nA BMI of 30 or above is classified as obesity. Class I is 30-34.9, Class II is 35-39.9, and Class III (morbid obesity) is 40 and above.\n\n### Can children use BMI?\nBMI for children and teens uses age- and sex-specific growth charts, not the standard adult thresholds. Adult BMI formulas do not apply to children under 18.\n\n### Does BMI account for muscle mass?\nNo. BMI uses only weight and height. A bodybuilder with high muscle mass and low fat may have an overweight BMI despite being extremely fit.\n\n### How accurate is BMI for women vs. men?\nWomen naturally have higher body fat percentages than men at the same BMI. Some researchers advocate for sex-specific BMI thresholds, though WHO still uses the universal scale."
+},
+  {
+  "slug": "tip-calculator-guide",
+  "toolSlug": "tip-calculator",
+  "title": "The Complete Guide to Tipping: Percentages, Etiquette & Bill Splitting",
+  "seoTitle": "Tip Calculator Guide: Tipping Etiquette & Bill Splitting Rules",
+  "seoDescription": "Master tipping with the right percentages for restaurants, delivery, taxis, and salons. Learn how to split bills fairly with our complete tipping guide.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "finance",
+  "keywords": [
+    "tip calculator guide",
+    "restaurant tip etiquette",
+    "how much to tip",
+    "bill splitting guide",
+    "tipping percentages"
+  ],
+  "content": "## Overview\n\nTipping is a social practice where customers voluntarily add a gratuity to service workers in recognition of quality service. Our Tip Calculator instantly computes tip amounts and splits bills among any number of diners.\n\n---\n\n## Tipping by Service Type (USA)\n\n- Restaurant (sit-down): 15-20%\n- Food delivery: 10-20% (minimum $3-5)\n- Coffee shop / counter: $1-2\n- Taxi / Rideshare: 10-15%\n- Hair salon / Barber: 15-20%\n- Hotel housekeeping: $2-5 per night\n- Valet parking: $2-5\n- Spa / Massage: 15-20%\n\n---\n\n## The Math Behind Tipping\n\n- Tip Amount = Bill x (Tip% / 100)\n- Total = Bill + Tip Amount\n- Per Person = Total / Number of People\n\nExample: $80 bill, 20% tip, 4 people:\n- Tip = $80 x 0.20 = $16\n- Total = $96\n- Per person = $24\n\n---\n\n## Frequently Asked Questions\n\n### Should I tip on the total including tax?\nEither is acceptable. Many people tip on the pre-tax subtotal; others find it easier to tip on the total. The difference is usually small.\n\n### Is tipping mandatory?\nIn the US, tipping is customary and expected, though not legally required. Some restaurants add automatic gratuity for large groups (usually 18% for 6+ guests).\n\n### How do I split an unequal bill?\nFor unequal meals, calculate each person portion separately — each person enters their sub-bill with the full tip percentage.\n\n### What if service was poor?\nFor genuinely poor server service, 10% is acceptable. For serious issues, speak with the manager. Do not punish the server for kitchen delays or food quality issues they cannot control.\n\n### Is tipping different in other countries?\nYes. Japan and South Korea: tipping is considered rude. Much of Europe: service is included; small tips are optional. Australia: tipping is not expected but appreciated."
+},
+  {
+  "slug": "temperature-converter-guide",
+  "toolSlug": "temperature-converter",
+  "title": "The Complete Guide to Temperature Conversion: Celsius, Fahrenheit & Kelvin",
+  "seoTitle": "Temperature Converter Guide: Celsius, Fahrenheit & Kelvin Formulas",
+  "seoDescription": "Learn temperature conversion formulas between Celsius, Fahrenheit, Kelvin, and Rankine. Reference points, history, and practical examples explained.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "converters",
+  "keywords": [
+    "temperature converter guide",
+    "celsius to fahrenheit formula",
+    "kelvin temperature scale",
+    "temperature conversion chart"
+  ],
+  "content": "## Overview\n\nTemperature is a fundamental physical quantity. Our Temperature Converter instantly converts between Celsius, Fahrenheit, Kelvin, and Rankine in your browser with no data upload.\n\n---\n\n## Conversion Formulas\n\n- Celsius to Fahrenheit: (C x 9/5) + 32\n- Fahrenheit to Celsius: (F - 32) x 5/9\n- Celsius to Kelvin: C + 273.15\n- Kelvin to Celsius: K - 273.15\n- Fahrenheit to Rankine: F + 459.67\n\n---\n\n## Key Reference Points\n\n- Absolute zero: -273.15 C = -459.67 F = 0 K\n- Water freezes: 0 C = 32 F = 273.15 K\n- Room temperature: 20 C = 68 F = 293.15 K\n- Body temperature: 37 C = 98.6 F = 310.15 K\n- Water boils: 100 C = 212 F = 373.15 K\n\n---\n\n## The Four Temperature Scales\n\n**Celsius:** The global everyday standard. 0 C = water freezing, 100 C = water boiling.\n**Fahrenheit:** Used in the US for weather and cooking. 32 F freezing, 212 F boiling.\n**Kelvin:** Scientific absolute scale. 0 K = absolute zero (no molecular motion).\n**Rankine:** Absolute scale with Fahrenheit-sized degrees. Used in some US engineering fields.\n\n---\n\n## Frequently Asked Questions\n\n### At what temperature are Celsius and Fahrenheit equal?\nAt exactly -40. Both scales meet at -40 C = -40 F.\n\n### Why does science use Kelvin instead of Celsius?\nKelvin is an absolute scale with no negatives, making thermodynamic equations simpler.\n\n### Is 37 C normal body temperature?\nYes, 37 C (98.6 F) is the classic average. Modern research suggests the actual average is slightly lower, around 36.6 C, and varies by individual and time of day.\n\n### What is the boiling point of water at high altitude?\nWater boils at a lower temperature at higher altitudes because atmospheric pressure is lower. At 2000m elevation, water boils at about 93 C instead of 100 C.\n\n### Why does the US use Fahrenheit instead of Celsius?\nThe US adopted Fahrenheit in colonial times and never transitioned during metrication efforts in the 1970s, unlike most other countries."
+},
+  {
+  "slug": "binary-text-converter-guide",
+  "toolSlug": "binary-text-converter",
+  "title": "The Complete Guide to Binary-Text Encoding: ASCII, Bits & Bytes Explained",
+  "seoTitle": "Binary to Text Converter Guide: ASCII, 8-Bit Encoding Explained",
+  "seoDescription": "Learn how text is encoded as binary (ASCII). Convert letters to 8-bit binary groups and understand how computers store characters at the hardware level.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "text-dev",
+  "keywords": [
+    "binary to text guide",
+    "ascii binary encoding",
+    "text to binary tutorial",
+    "how computers store text",
+    "binary character representation"
+  ],
+  "content": "## Overview\n\nEvery character you type is stored internally as a binary number. Our Binary to Text Converter shows the 8-bit binary representation of any text and decodes binary back to readable characters.\n\n---\n\n## How ASCII Binary Encoding Works\n\nEach character is mapped to a decimal number via the ASCII standard, then expressed as an 8-bit binary number:\n\n- A -> ASCII 65 -> binary: 01000001\n- a -> ASCII 97 -> binary: 01100001\n- 0 -> ASCII 48 -> binary: 00110000\n- Space -> ASCII 32 -> binary: 00100000\n- ! -> ASCII 33 -> binary: 00100001\n\n---\n\n## Binary Encoding of \"Hello\"\n\nH = 01001000, e = 01100101, l = 01101100, l = 01101100, o = 01101111\n\nResult: 01001000 01100101 01101100 01101100 01101111\n\n---\n\n## 8 Bits = 1 Byte = 256 Possible Values\n\nWith 8 binary digits, you can represent 2^8 = 256 different values (0-255). The original ASCII standard used 7 bits (128 values). Extended ASCII added the 8th bit (256 values). Unicode extends this further with multi-byte encodings (UTF-8, UTF-16).\n\n---\n\n## Frequently Asked Questions\n\n### Why does binary use 8-bit groups for text?\n8 bits (1 byte) is the standard unit of digital storage. It can represent 256 different values, covering all standard ASCII characters.\n\n### What is the binary for the letter Z?\nZ has ASCII code 90, which in binary is 01011010.\n\n### What is the difference between binary and Base64 encoding?\nBinary represents each character as 8 raw bits (0s and 1s). Base64 encodes binary data as ASCII-safe text using 64 printable characters for safe transport in URLs and emails.\n\n### Can binary represent emoji?\nStandard 8-bit ASCII cannot represent emoji. Emoji use Unicode code points that require UTF-8 multi-byte encoding (3-4 bytes per emoji).\n\n### Is binary the same as machine code?\nNot exactly. Machine code is binary instructions for a CPU instruction set. Binary-encoded text is just the binary representation of character data, not executable instructions."
+},
+  {
+  "slug": "string-utilities-guide",
+  "toolSlug": "string-utilities",
+  "title": "The Complete Guide to String Manipulation: Slugs, Cases & Palindromes",
+  "seoTitle": "String Utilities Guide: URL Slugs, camelCase & Palindromes Explained",
+  "seoDescription": "Master string manipulation techniques: generate URL slugs, convert between camelCase/snake_case/Title Case, detect palindromes, and normalize whitespace.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "text-dev",
+  "keywords": [
+    "string utilities guide",
+    "url slug generator guide",
+    "camelcase snake case converter",
+    "palindrome checker",
+    "text manipulation"
+  ],
+  "content": "## Overview\n\nThe String Utilities tool provides instant text transformation including reversal, URL slug generation, palindrome detection, and multiple case conversions — all computed locally in your browser.\n\n---\n\n## URL Slug Generation\n\nA URL slug is the URL-safe version of a title. The algorithm:\n1. Lowercase all characters.\n2. Remove special characters (keep letters, digits, hyphens).\n3. Replace spaces with hyphens.\n4. Collapse multiple hyphens.\n\nExample: \"Hello World 10 Tips!\" becomes hello-world-10-tips\n\n---\n\n## Case Conversion Reference\n\n- hello world -> helloWorld (camelCase) | hello_world (snake_case) | Hello World (Title Case)\n- my blog post -> myBlogPost (camelCase) | my_blog_post (snake_case) | My Blog Post (Title Case)\n\ncamelCase: JavaScript variables, functions, React props.\nsnake_case: Python variables, database columns, file names.\nTitle Case: Blog headings, book titles, button labels.\n\n---\n\n## Palindrome Examples\n\nA palindrome reads the same forwards and backwards (ignoring spaces and punctuation):\n- \"racecar\" is a palindrome\n- \"A man a plan a canal Panama\" is a palindrome\n- \"Was it a car or a cat I saw?\" is a palindrome\n- \"Never odd or even\" is a palindrome\n\n---\n\n## Frequently Asked Questions\n\n### What characters are allowed in URL slugs?\nSlugs should contain only lowercase letters (a-z), digits (0-9), and hyphens (-). No spaces, underscores, or special characters.\n\n### What is PascalCase?\nPascalCase is like camelCase but the first word is also capitalized: MyComponent, UserProfile, OrderController. Used for class names and React components.\n\n### Is \"radar\" a palindrome?\nYes. \"radar\" reads the same forwards and backwards.\n\n### Why normalize whitespace in strings?\nUser input often contains accidental double spaces, leading or trailing spaces, or non-breaking spaces. Normalization ensures clean, consistent data for storage, display, and comparison.\n\n### What is the difference between trim() and strip in Python?\nBoth remove leading and trailing whitespace from a string. JavaScript uses trim(), trimStart(), and trimEnd(). Python uses strip(), lstrip(), and rstrip()."
+},
+  {
+  "slug": "xml-formatter-guide",
+  "toolSlug": "xml-formatter",
+  "title": "The Complete Guide to XML: Formatting, Validation & Structure",
+  "seoTitle": "XML Formatter Guide: Beautify, Minify & Validate XML Online",
+  "seoDescription": "Learn how to format and validate XML documents. Understand XML structure, namespaces, the difference from JSON, and when to use XML vs JSON in modern APIs.",
+  "readTime": "6 min read",
+  "publishedAt": "2026-05-01",
+  "category": "text-dev",
+  "keywords": [
+    "xml formatter guide",
+    "xml beautifier tutorial",
+    "xml vs json",
+    "xml validation",
+    "xml structure explained"
+  ],
+  "content": "## Overview\n\nXML (eXtensible Markup Language) is a text-based data format for structured, hierarchical data. Our XML Formatter beautifies, minifies, and validates XML documents entirely in your browser.\n\n---\n\n## XML Document Structure\n\nAn XML document consists of:\n- Prolog: the optional XML declaration at the top\n- Root element: every XML document must have exactly one\n- Child elements: nested tags that build the hierarchy\n- Attributes: metadata inside opening tags\n- Self-closing elements: tags with no content\n\n---\n\n## Well-Formed XML Rules\n\n1. Must have exactly one root element\n2. All tags must be properly closed\n3. Tags are case-sensitive (Name and name are different)\n4. Attribute values must be in quotes\n5. Special characters must be escaped (&amp;, &lt;, &gt;)\n6. Elements must be properly nested (no overlapping)\n\n---\n\n## XML vs JSON Comparison\n\n- Both are human-readable data formats\n- XML supports comments; JSON does not\n- XML supports attributes; JSON does not natively\n- JSON is smaller and dominant for REST APIs\n- XML is dominant for SOAP web services and enterprise systems\n- XML is used for Android resources, SVG graphics, Microsoft Office formats, and RSS feeds\n\n---\n\n## Frequently Asked Questions\n\n### What is the difference between XML and HTML?\nHTML defines fixed tags for web rendering. XML uses custom user-defined tags to store structured data. XHTML is HTML rewritten as valid XML.\n\n### What does \"well-formed\" mean in XML?\nA well-formed XML document follows all syntactic rules: single root, closed tags, quoted attributes, proper nesting. It is distinct from \"valid\" XML which also conforms to a Schema (XSD/DTD).\n\n### Is XML still relevant in 2024?\nYes. XML is essential for Android development, SOAP web services, Microsoft Office formats (DOCX, XLSX), SVG graphics, RSS feeds, and many enterprise systems.\n\n### What is an XML namespace?\nNamespaces (xmlns) prevent tag name collisions when combining XML from multiple schemas.\n\n### Can I convert XML to JSON?\nYes, though the mapping involves choices (how to handle attributes, text nodes, arrays). Many libraries exist for XML-to-JSON conversion."
+},
+  {
+  "slug": "roman-numeral-converter-guide",
+  "toolSlug": "roman-numeral-converter",
+  "title": "The Complete Guide to Roman Numerals: History, Rules & Conversion",
+  "seoTitle": "Roman Numeral Converter Guide: History, Rules & Conversion Examples",
+  "seoDescription": "Learn the Roman numeral system: the 7 symbols, subtractive notation rules, and how to convert any integer to Roman numerals and back with worked examples.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "text-dev",
+  "keywords": [
+    "roman numeral guide",
+    "roman numerals explained",
+    "how to convert roman numerals",
+    "roman numeral rules",
+    "roman numeral chart 1 to 100"
+  ],
+  "content": "## Overview\n\nRoman numerals are an ancient number system that remains in widespread use on clock faces, movie titles, Super Bowls, and formal documents. Our Roman Numeral Converter handles integers 1 to 3999 in both directions.\n\n---\n\n## The 7 Roman Numeral Symbols\n\nI = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000\n\n---\n\n## Subtractive Notation Rules\n\nTo avoid four identical symbols in a row, six subtractive combinations are used:\n- IV = 4, IX = 9, XL = 40, XC = 90, CD = 400, CM = 900\n\n---\n\n## Worked Examples\n\n- 2024 = MM (2000) + XX (20) + IV (4) = MMXXIV\n- 1999 = M (1000) + CM (900) + XC (90) + IX (9) = MCMXCIX\n- 58 = L (50) + V (5) + III (3) = LVIII (Super Bowl LVIII)\n- 42 = XL (40) + II (2) = XLII\n\n---\n\n## Roman Numerals 1 to 20\n\nI, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII, XIII, XIV, XV, XVI, XVII, XVIII, XIX, XX\n\n---\n\n## Frequently Asked Questions\n\n### Why do clock faces use IIII instead of IV?\nMany clockmakers use IIII for visual symmetry — it balances VIII on the opposite side and avoids abbreviating the name of Jupiter (IVPITER in Latin).\n\n### What is the Roman numeral for 2024?\nMMXXIV (MM=2000, XX=20, IV=4).\n\n### What is the Roman numeral for 1000?\nM (from Latin \"mille\" meaning thousand).\n\n### Why can Roman numerals not represent zero or negative numbers?\nThe Roman system had no concept of zero or negative numbers. These mathematical concepts were formalized later via Indian-Arabic mathematics.\n\n### What is the largest standard Roman numeral?\n3999 = MMMCMXCIX. Beyond 3999, standard notation would require four Ms which violates the repetition rule."
+},
+  {
+  "slug": "stopwatch-timer-guide",
+  "toolSlug": "stopwatch-timer",
+  "title": "The Complete Guide to Stopwatches & Timers: Precision, Laps & Productivity",
+  "seoTitle": "Stopwatch & Timer Guide: Precision Timing, Laps & Productivity Tips",
+  "seoDescription": "Master online stopwatch and countdown timers. Learn how requestAnimationFrame timing works, how to use laps for interval training, and productivity timer techniques.",
+  "readTime": "5 min read",
+  "publishedAt": "2026-05-01",
+  "category": "date-time",
+  "keywords": [
+    "stopwatch guide",
+    "countdown timer tutorial",
+    "pomodoro timer",
+    "interval training timer",
+    "browser stopwatch accuracy"
+  ],
+  "content": "## Overview\n\nA precision Stopwatch and Countdown Timer is essential for cooking, exercise intervals, study sessions, sports timing, and productivity techniques. Our browser-based tool uses requestAnimationFrame for accurate, smooth timing with zero installation required.\n\n---\n\n## How Browser Timing Works\n\nOur stopwatch uses two key browser APIs:\n\nrequestAnimationFrame (rAF): Synchronizes updates with the display refresh rate (60 fps), providing smooth visual updates without excessive CPU usage. Far superior to setInterval for timers.\n\nDate.now(): Returns a monotonic timestamp in milliseconds. Elapsed time is calculated as: elapsed = Date.now() minus startTimestamp plus pausedAccumulator — immune to rAF skip-frames.\n\n---\n\n## The Pomodoro Technique\n\n1. Set countdown to 25 minutes (1500 seconds)\n2. Work with full focus until the timer ends\n3. Take a 5-minute break\n4. After 4 pomodoros, take a 30-minute long break\n\nResearch suggests this rhythm optimizes focus while preventing mental fatigue.\n\n---\n\n## Lap Timing for Sports and Exercise\n\nIn stopwatch mode, the Lap button records the current elapsed time without stopping the clock. Use laps for:\n- Running: Record each 400m split time\n- Swimming: Record each lap or length time\n- Interval training: Tabata (20 sec on / 10 sec off) with lap markers\n- Cooking: Record the time each dish component is added\n\n---\n\n## Countdown Timer Durations Reference\n\n- Pomodoro focus: 1500 seconds (25 min)\n- Short break: 300 seconds (5 min)\n- Long break: 1800 seconds (30 min)\n- Tabata interval: 20 seconds\n- Tabata rest: 10 seconds\n- Soft-boiled egg: 360 seconds (6 min)\n- Hard-boiled egg: 600 seconds (10 min)\n\n---\n\n## Frequently Asked Questions\n\n### How accurate is the browser stopwatch?\nOur tool uses Date.now() for elapsed time calculation, which is accurate to 1 millisecond. The display updates at approximately 60fps. Browser background tab throttling may affect accuracy for very long sessions.\n\n### Does the countdown timer make a sound?\nThe timer displays a visual red alert and \"Time is up!\" message. Browser-native audio alerts are not implemented to avoid unexpected sounds.\n\n### Can I use this for Tabata workouts?\nYes. Set 20-second countdown intervals for work periods and 10-second intervals for rest. The countdown mode is ideal for structured interval training.\n\n### Does the timer work on mobile?\nYes. Keep the screen awake (disable auto-lock) to prevent background throttling from affecting timer accuracy on mobile browsers.\n\n### What is centisecond precision?\nCentiseconds are 1/100th of a second (10 milliseconds). The stopwatch displays MM:SS.cs format where cs is the centisecond counter."
+}
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

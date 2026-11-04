@@ -39,6 +39,12 @@ import {
   AlignLeft,
   Calendar,
   Volume2,
+  Activity,
+  UtensilsCrossed,
+  Thermometer,
+  CodeXml,
+  BookOpen,
+  Timer,
   type LucideProps,
 } from 'lucide-react';
 
@@ -81,6 +87,12 @@ const iconMap: Record<string, React.FC<LucideProps>> = {
   AlignLeft,
   Calendar,
   Volume2,
+  Activity,
+  UtensilsCrossed,
+  Thermometer,
+  CodeXml,
+  BookOpen,
+  Timer,
 };
 
 export interface ToolIconProps extends LucideProps {

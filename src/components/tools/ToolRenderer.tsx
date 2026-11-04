@@ -81,6 +81,22 @@ const toolComponents: Record<string, React.ComponentType<any>> = {
     import('@/features/cron-expression-builder/CronExpressionBuilderTool').then((m) => m.CronExpressionBuilderTool), { ssr: false }),
   'text-to-speech': dynamic(() =>
     import('@/features/text-to-speech/TextToSpeechTool').then((m) => m.TextToSpeechTool), { ssr: false }),
+  'bmi-calculator': dynamic(() =>
+    import('@/features/bmi-calculator/BmiCalculatorTool').then((m) => m.BmiCalculatorTool), { ssr: false }),
+  'tip-calculator': dynamic(() =>
+    import('@/features/tip-calculator/TipCalculatorTool').then((m) => m.TipCalculatorTool), { ssr: false }),
+  'temperature-converter': dynamic(() =>
+    import('@/features/temperature-converter/TemperatureConverterTool').then((m) => m.TemperatureConverterTool), { ssr: false }),
+  'binary-text-converter': dynamic(() =>
+    import('@/features/binary-text-converter/BinaryTextConverterTool').then((m) => m.BinaryTextConverterTool), { ssr: false }),
+  'string-utilities': dynamic(() =>
+    import('@/features/string-utilities/StringUtilitiesTool').then((m) => m.StringUtilitiesTool), { ssr: false }),
+  'xml-formatter': dynamic(() =>
+    import('@/features/xml-formatter/XmlFormatterTool').then((m) => m.XmlFormatterTool), { ssr: false }),
+  'roman-numeral-converter': dynamic(() =>
+    import('@/features/roman-numeral-converter/RomanNumeralConverterTool').then((m) => m.RomanNumeralConverterTool), { ssr: false }),
+  'stopwatch-timer': dynamic(() =>
+    import('@/features/stopwatch-timer/StopwatchTimerTool').then((m) => m.StopwatchTimerTool), { ssr: false }),
 };
 
 export function ToolRenderer({ slug }: { slug: string }) {

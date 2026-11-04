@@ -2297,6 +2297,441 @@ The rate control adjusts speech speed (0.1x to 10x, recommended 0.5x–2x for na
       ],
     },
   },
+  // ───── NEW BATCH 4 ─────
+  {
+    slug: 'bmi-calculator',
+    name: 'BMI Calculator',
+    shortDescription: 'Calculate your Body Mass Index (BMI) and healthy weight range instantly.',
+    seoTitle: 'Free BMI Calculator — Body Mass Index Online Tool',
+    seoDescription: 'Calculate your BMI instantly in metric (kg/cm) or imperial (lbs/inches). See your BMI category, ideal weight range, and health classification — 100% private.',
+    category: 'finance',
+    tags: ['BMI', 'Health', 'Calculator', 'Fitness', 'Body Weight'],
+    keywords: ['bmi calculator', 'body mass index calculator', 'bmi chart', 'healthy weight calculator', 'bmi metric imperial'],
+    icon: 'Activity',
+    popular: true,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['age-calculator', 'unit-converter', 'tip-calculator'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select your preferred unit system: Metric (kg / cm) or Imperial (lbs / inches).',
+        'Enter your body weight in the Weight field.',
+        'Enter your height in the Height field.',
+        'Your BMI score, category, and ideal weight range are calculated instantly.',
+      ],
+      about: `The **Body Mass Index (BMI)** is a numerical measure calculated from a person's weight and height. It provides a simple, widely used screening tool for weight categories that may lead to health problems.
+
+**How BMI is Calculated:**
+- **Metric formula:** BMI = weight (kg) ÷ height² (m)
+- **Imperial formula:** BMI = 703 × weight (lbs) ÷ height² (inches)
+
+**BMI Categories (WHO Standard):**
+- **Underweight:** BMI < 18.5 — may indicate nutritional deficiency or other health concerns.
+- **Normal weight:** BMI 18.5–24.9 — associated with the lowest health risk in most populations.
+- **Overweight:** BMI 25–29.9 — increased risk for cardiovascular disease, diabetes, and hypertension.
+- **Obese Class I:** BMI 30–34.9 — moderate obesity with significant health risks.
+- **Obese Class II:** BMI 35–39.9 — severe obesity.
+- **Obese Class III:** BMI ≥ 40 — very severe or morbid obesity.
+
+**Important Limitations of BMI:**
+BMI is a population-level screening tool and does not directly measure body fat. It may misclassify highly muscular individuals as overweight, or underestimate fat percentage in older adults who have lost muscle mass. Athletes, pregnant women, children, and the elderly should consult healthcare professionals for personalized assessment.
+
+**Ideal Weight Calculation:**
+Our tool uses the BMI formula in reverse to compute the weight range corresponding to BMI 18.5–24.9 for your height. This represents the statistically normal range, not a prescription.`,
+      faqs: [
+        { q: 'What is a healthy BMI range?', a: 'The World Health Organization defines a healthy BMI range as 18.5 to 24.9 for adults. Values below 18.5 indicate underweight; 25–29.9 is overweight; 30+ is obese.' },
+        { q: 'Is BMI accurate for everyone?', a: 'BMI is a population screening tool, not a precise health measurement. It may overestimate fat in muscular athletes and underestimate it in older adults with low muscle mass.' },
+        { q: 'What is the BMI formula?', a: 'Metric: BMI = weight (kg) / height² (m). Imperial: BMI = 703 × weight (lbs) / height² (inches).' },
+        { q: 'Does this tool store my weight or height data?', a: 'No. All calculations are performed locally in your browser. No personal health data is ever collected or transmitted.' },
+        { q: 'What is the ideal weight range?', a: 'The ideal weight range is calculated using BMI values of 18.5 (lower bound) and 24.9 (upper bound) for your specific height.' },
+      ],
+    },
+  },
+  {
+    slug: 'tip-calculator',
+    name: 'Tip Calculator',
+    shortDescription: 'Calculate restaurant tip amounts and split the bill fairly among friends.',
+    seoTitle: 'Tip Calculator — Split Bill & Calculate Gratuity Online Free',
+    seoDescription: 'Free tip calculator. Enter bill amount, tip percentage, and number of people to instantly calculate tip, total bill, and amount per person.',
+    category: 'finance',
+    tags: ['Tip', 'Bill Split', 'Restaurant', 'Calculator', 'Gratuity'],
+    keywords: ['tip calculator', 'restaurant tip calculator', 'bill splitter', 'split bill online', 'gratuity calculator', 'tip percentage calculator'],
+    icon: 'UtensilsCrossed',
+    popular: true,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['percentage-calculator', 'gst-calculator', 'bmi-calculator'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Enter the total bill amount in the Bill Amount field.',
+        'Select a tip percentage preset (10%, 15%, 18%, 20%, 25%) or drag the slider to a custom value.',
+        'Enter the number of people splitting the bill.',
+        'See tip amount, total bill, per-person total, and per-person tip amount instantly.',
+      ],
+      about: `The **Tip Calculator** instantly computes gratuity amounts and splits the total bill among any number of diners — helping you tip correctly and divide expenses fairly without awkward mental math at the table.
+
+**Standard Tip Guidelines:**
+Tipping customs vary by country and service type. In the United States, the standard ranges are:
+- **10%** — Below average service or large groups where service was included.
+- **15%** — Standard service at a sit-down restaurant.
+- **18%** — Good service (many restaurants add this automatically for groups of 6+).
+- **20%** — Excellent service — the current social norm at most American restaurants.
+- **25%+** — Exceptional service, special occasions, or luxury dining.
+
+**Tipping in Other Contexts:**
+- **Food delivery:** 10–20% of the order total, or \$3–5 minimum.
+- **Taxi/rideshare:** 10–15%, or round up to the nearest dollar.
+- **Hair salon:** 15–20% on the service total.
+- **Hotel housekeeping:** \$2–5 per night.
+- **Coffee shop:** \$1–2 for counter service.
+
+**Splitting the Bill:**
+When splitting between multiple people, the tool divides both the base amount and the tip evenly. For unequal splits (e.g., someone ordered wine), individual diners can run the tool multiple times with their portion of the bill.
+
+**How the Calculation Works:**
+- Tip Amount = Bill × (Tip% ÷ 100)
+- Total = Bill + Tip Amount
+- Per Person = Total ÷ Number of People`,
+      faqs: [
+        { q: 'What is the standard tip percentage at restaurants?', a: '15% is the traditional standard in the US, but 18–20% has become the new norm for good service. 25%+ is considered exceptional.' },
+        { q: 'Should I tip on the pre-tax or post-tax amount?', a: 'Either is acceptable. Tipping on the pre-tax subtotal is technically correct; many people tip on the total for simplicity.' },
+        { q: 'What happens if service is poor?', a: 'If service was genuinely poor due to your server (not the kitchen), 10% or less is acceptable. For serious issues, speak to the manager.' },
+        { q: 'Is tipping mandatory in all countries?', a: 'No. In Japan, South Korea, and many European countries, tipping is not customary and may even be considered rude.' },
+        { q: 'Does the calculator round the per-person amount?', a: 'Results are rounded to the nearest cent (2 decimal places). For exact change, adjust the tip amount slightly to make totals divisible.' },
+      ],
+    },
+  },
+  {
+    slug: 'temperature-converter',
+    name: 'Temperature Converter',
+    shortDescription: 'Convert temperatures between Celsius, Fahrenheit, Kelvin, and Rankine instantly.',
+    seoTitle: 'Temperature Converter — Celsius, Fahrenheit & Kelvin Online',
+    seoDescription: 'Free temperature converter. Instantly convert between Celsius, Fahrenheit, Kelvin, and Rankine with formulas and live results. 100% browser-based.',
+    category: 'converters',
+    tags: ['Temperature', 'Celsius', 'Fahrenheit', 'Kelvin', 'Converter'],
+    keywords: ['temperature converter', 'celsius to fahrenheit', 'fahrenheit to celsius', 'kelvin to celsius', 'temperature conversion online'],
+    icon: 'Thermometer',
+    popular: true,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['unit-converter', 'number-base-converter', 'aspect-ratio-calculator'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select the source temperature unit (Celsius, Fahrenheit, Kelvin, or Rankine).',
+        'Enter your temperature value in the input field.',
+        'All equivalent temperatures in the other three units appear instantly.',
+        'Click Copy next to any value to copy it to your clipboard.',
+      ],
+      about: `Temperature is a fundamental physical quantity measuring the thermal energy of a system. Different fields and regions use different scales, making conversion an everyday necessity for scientists, engineers, chefs, weather enthusiasts, and international travelers.
+
+**The Four Major Temperature Scales:**
+
+**Celsius (°C)**
+The most widely used scale globally. Water freezes at 0°C and boils at 100°C at sea level (1 atm). The scale is used by virtually every country except the United States for everyday temperature measurement.
+
+**Fahrenheit (°F)**
+Developed by Daniel Gabriel Fahrenheit in 1724. Water freezes at 32°F and boils at 212°F. Used as the official scale in the United States, its territories, and a handful of other nations for everyday weather and body temperature.
+
+**Kelvin (K)**
+The SI base unit for temperature used in science and engineering. Zero Kelvin (absolute zero, −273.15°C) is the theoretical point at which molecular motion completely stops. Kelvin has no negative values by definition.
+
+**Rankine (°R)**
+An absolute temperature scale using Fahrenheit-sized degrees. Zero Rankine corresponds to absolute zero. Primarily used in some engineering applications in the United States.
+
+**Conversion Formulas:**
+- °C to °F: (°C × 9/5) + 32
+- °F to °C: (°F − 32) × 5/9
+- °C to K: °C + 273.15
+- K to °C: K − 273.15
+- °F to Rankine: °F + 459.67
+
+**Reference Points:**
+- Water freezes: 0°C = 32°F = 273.15K = 491.67°R
+- Water boils: 100°C = 212°F = 373.15K = 671.67°R
+- Absolute zero: −273.15°C = −459.67°F = 0K = 0°R
+- Human body: 37°C = 98.6°F = 310.15K
+- Room temperature: 20°C = 68°F = 293.15K
+
+All calculations run locally in your browser using high-precision arithmetic. Zero data is uploaded or transmitted.`,
+      faqs: [
+        { q: 'What is absolute zero in Celsius and Fahrenheit?', a: 'Absolute zero is −273.15°C or −459.67°F (0 Kelvin). It is the lowest theoretically possible temperature.' },
+        { q: 'At what temperature are Celsius and Fahrenheit equal?', a: 'Celsius and Fahrenheit are equal at −40°. At that temperature, −40°C = −40°F.' },
+        { q: 'What is normal human body temperature in Celsius and Fahrenheit?', a: 'Normal human body temperature is approximately 37°C (98.6°F), though it varies slightly by individual, time of day, and measurement location.' },
+        { q: 'Why is Kelvin used in science instead of Celsius?', a: 'Kelvin is an absolute scale starting from absolute zero, making mathematical relationships in thermodynamics and physics simpler and more consistent.' },
+        { q: 'What temperature does water boil and freeze?', a: 'Water freezes at 0°C (32°F / 273.15K) and boils at 100°C (212°F / 373.15K) at standard atmospheric pressure (1 atm, sea level).' },
+      ],
+    },
+  },
+  {
+    slug: 'binary-text-converter',
+    name: 'Binary ↔ Text Converter',
+    shortDescription: 'Convert plain text to 8-bit binary (ASCII) representation and decode binary back to text.',
+    seoTitle: 'Binary to Text Converter — Encode & Decode Binary Online Free',
+    seoDescription: 'Free binary to text converter. Convert any text to binary (8-bit ASCII representation) or decode binary code back to readable text. Works 100% in your browser.',
+    category: 'text-dev',
+    tags: ['Binary', 'Text', 'Encoder', 'Decoder', 'ASCII', 'Developer'],
+    keywords: ['binary to text', 'text to binary', 'binary converter', 'ascii binary encoder', 'decode binary code online'],
+    icon: 'Binary',
+    popular: false,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['number-base-converter', 'base64-converter', 'morse-code-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select the mode: "Text → Binary" to encode, or "Binary → Text" to decode.',
+        'Type or paste your text or binary code in the input field.',
+        'The converted output appears instantly.',
+        'Use the Swap button to exchange input and output for round-trip verification.',
+        'Click Copy to save the output to your clipboard.',
+      ],
+      about: `Binary-to-text encoding represents human-readable text using the binary number system (base 2 — 0s and 1s). This is the actual representation computers use internally to store and process every character.
+
+**How Text ↔ Binary Conversion Works:**
+
+**Text to Binary (Encoding):**
+Each character in plain text has a corresponding decimal code defined by the **ASCII** (American Standard Code for Information Interchange) or **Unicode** standard. The decimal code is then expressed as an 8-bit binary number:
+- 'A' → ASCII 65 → binary: 01000001
+- 'a' → ASCII 97 → binary: 01100001
+- '1' → ASCII 49 → binary: 00110001
+- Space → ASCII 32 → binary: 00100000
+
+Each character produces exactly 8 bits (1 byte), so the word "Hello" produces 5 groups of 8-bit binary numbers separated by spaces.
+
+**Binary to Text (Decoding):**
+Each 8-bit group is converted back to its decimal value using base-2 positional notation, then mapped back to the corresponding ASCII/Unicode character.
+
+**Practical Uses of Binary Representation:**
+- **Education:** Teaching students how computers store characters at the hardware level.
+- **Networking and protocols:** Understanding binary data framing in packet-based communications.
+- **Data analysis:** Inspecting raw binary content of files, headers, and payloads.
+- **Puzzle solving:** Binary encoding puzzles and CTF (Capture The Flag) security challenges.
+- **Digital art:** ASCII art, matrix-style visual displays, and low-level animations.`,
+      faqs: [
+        { q: 'What is binary code?', a: 'Binary code is the most fundamental digital encoding system, using only two symbols (0 and 1) to represent data. Every piece of digital information — text, images, audio, programs — is ultimately stored as binary.' },
+        { q: 'Why does each character use 8 bits?', a: '8 bits (1 byte) can represent 256 different values (0–255), which is enough for all standard ASCII characters. Unicode uses multiple bytes for extended character sets.' },
+        { q: 'What is the binary code for "Hello"?', a: 'H=01001000, e=01100101, l=01101100, l=01101100, o=01101111 — separated by spaces: 01001000 01100101 01101100 01101100 01101111.' },
+        { q: 'What is the difference between binary and hexadecimal?', a: 'Both are non-decimal numeral systems. Binary uses base 2 (0–1) and each digit is 1 bit. Hexadecimal uses base 16 (0–F) and each digit represents 4 bits (a nibble).' },
+        { q: 'Can this tool handle Unicode characters?', a: 'The tool uses charCodeAt() which works for characters in the BMP (Basic Multilingual Plane, U+0000 to U+FFFF). For extended Unicode (emoji, rare scripts), use a full UTF-8 encoder.' },
+      ],
+    },
+  },
+  {
+    slug: 'string-utilities',
+    name: 'String Utilities',
+    shortDescription: 'Reverse text, generate URL slugs, detect palindromes, convert case, and clean strings.',
+    seoTitle: 'String Utilities — Reverse Text, Slug Generator & Case Converter',
+    seoDescription: 'Free string utilities tool. Reverse text, generate URL slugs, detect palindromes, convert to camelCase/snake_case/Title Case, and normalize whitespace instantly.',
+    category: 'text-dev',
+    tags: ['String', 'Text', 'Slug', 'Reverse', 'Case Converter', 'Developer'],
+    keywords: ['string utilities', 'reverse text online', 'url slug generator', 'palindrome checker', 'camelcase converter', 'snake case generator'],
+    icon: 'Wrench',
+    popular: false,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['case-converter', 'word-counter', 'character-counter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Type or paste any text into the input field.',
+        'All string transformations are computed and displayed instantly below.',
+        'Click the Copy button next to any output to copy it to your clipboard.',
+        'Check the palindrome indicator to see if your text reads the same forwards and backwards.',
+      ],
+      about: `The **String Utilities** tool provides a comprehensive suite of text transformation functions for developers, writers, and content creators — all computed instantly in your browser with zero data upload.
+
+**Included Transformations:**
+
+**Text Reversal:**
+Reverses the order of all characters in the input string. Useful for encryption exercises, palindrome testing, creative writing, and debugging string processing code.
+
+**URL Slug Generator:**
+Converts any text into a web-safe URL slug by: lowercasing all characters, removing special characters (keeping alphanumeric and hyphens), replacing spaces with hyphens, and collapsing multiple hyphens. For example: "Hello World — Best Tips!" becomes "hello-world-best-tips".
+
+**Palindrome Detection:**
+A palindrome is a word or phrase that reads the same forwards and backwards, ignoring case and non-alphanumeric characters. Classic examples: "racecar", "A man a plan a canal Panama", "Was it a car or a cat I saw?".
+
+**Case Conversions:**
+- **Title Case:** Capitalizes the first letter of every word. Used in headings and titles.
+- **camelCase:** No spaces, each word (except the first) starts with a capital. Used in JavaScript variable names.
+- **snake_case:** All lowercase with words separated by underscores. Used in Python variables, database column names, and file systems.
+
+**Whitespace Normalization:**
+Removes leading/trailing whitespace and collapses multiple consecutive spaces into single spaces. Essential for cleaning user-submitted form data before storage or display.`,
+      faqs: [
+        { q: 'What is a URL slug?', a: 'A URL slug is the part of a URL that identifies a page in human-readable form. For example, in /blog/my-first-post, "my-first-post" is the slug.' },
+        { q: 'What is a palindrome?', a: 'A palindrome reads the same forwards and backwards (ignoring spaces and punctuation). Examples: "racecar", "level", "A man a plan a canal Panama".' },
+        { q: 'What is camelCase used for?', a: 'camelCase is the naming convention for variables and functions in JavaScript, Java, TypeScript, and many other languages. Example: firstName, getUserName, calculateTotal.' },
+        { q: 'What is snake_case used for?', a: 'snake_case is the naming convention for Python variables, database column names, file system paths (Linux/macOS), and constants in many languages. Example: user_first_name, max_retry_count.' },
+        { q: 'Can I use this to generate blog post URLs?', a: 'Yes. Paste your blog post title into the tool and copy the URL Slug output directly for use in your CMS, WordPress permalink, or static site generator.' },
+      ],
+    },
+  },
+  {
+    slug: 'xml-formatter',
+    name: 'XML Formatter',
+    shortDescription: 'Beautify, minify, and validate XML documents with live error highlighting.',
+    seoTitle: 'XML Formatter — Beautify, Minify & Validate XML Online Free',
+    seoDescription: 'Free XML formatter and validator. Beautify minified XML with configurable indentation, minify XML for production, and validate structure — all in your browser.',
+    category: 'text-dev',
+    tags: ['XML', 'Formatter', 'Beautifier', 'Minifier', 'Developer Tools'],
+    keywords: ['xml formatter', 'xml beautifier', 'xml minifier online', 'xml validator', 'format xml online', 'pretty print xml'],
+    icon: 'CodeXml',
+    popular: false,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['json-formatter', 'html-entity-converter', 'regex-tester'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Paste your XML content into the Input XML field on the left.',
+        'Select "Beautify / Format" to indent and format, or "Minify" to compress the XML.',
+        'Adjust the indentation size (2, 4, or 8 spaces) for formatted output.',
+        'The validation indicator shows whether your XML is structurally valid.',
+        'Click Copy to save the formatted or minified XML to your clipboard.',
+      ],
+      about: `**XML** (eXtensible Markup Language) is a text-based format for encoding structured data in a both human-readable and machine-readable form. It is used extensively in web services (SOAP, REST APIs with XML responses), configuration files, Android resources, Microsoft Office documents (OOXML), and data interchange between enterprise systems.
+
+**Why XML Formatting Matters:**
+
+**Readability:** Raw or minified XML from APIs or automated systems is often a single unbroken line of text, making it extremely difficult to read, audit, or debug. Proper indentation reveals the hierarchical document tree structure at a glance.
+
+**Minification:** Removing whitespace from XML reduces file size and speeds up data transmission over networks. This is especially important for SOAP web service messages and large data exports.
+
+**Validation:** Structural XML validation checks that all opened tags are properly closed, attributes are correctly quoted, and the document has a single root element — the basic requirements of well-formed XML.
+
+**Common XML Use Cases:**
+- **Android development:** Layout files, resources, manifests, and Gradle configurations are all XML.
+- **SOAP web services:** Enterprise APIs frequently use XML-encoded SOAP envelopes.
+- **SVG graphics:** Scalable Vector Graphics files are XML-based.
+- **RSS and Atom feeds:** Web syndication formats are XML.
+- **Microsoft Office:** DOCX, XLSX, and PPTX files are ZIP archives containing XML files.
+- **Configuration:** Maven (pom.xml), Spring, Ant builds, and many legacy systems use XML configuration.`,
+      faqs: [
+        { q: 'What is the difference between XML and JSON?', a: 'Both are data interchange formats. XML uses angle-bracket tags and supports attributes; JSON uses curly braces and square brackets. JSON is lighter and more popular for modern REST APIs; XML is still dominant in enterprise SOAP services.' },
+        { q: 'What makes XML "well-formed"?', a: 'Well-formed XML must have a single root element, all tags must be properly closed, attribute values must be quoted, and elements must be properly nested without overlap.' },
+        { q: 'What is an XML namespace?', a: 'Namespaces (xmlns) prevent element name conflicts when combining XML from different sources. They are declared as attributes on the root or specific elements.' },
+        { q: 'Can this tool validate XML Schema (XSD)?', a: 'No. This tool performs basic well-formedness validation using the browser\'s DOMParser. Full XSD schema validation requires a server-side or native XML library.' },
+        { q: 'What is the difference between XML and HTML?', a: 'HTML defines fixed tags for web browsers. XML defines your own custom tags for structured data. XHTML is HTML rewritten to follow strict XML rules.' },
+      ],
+    },
+  },
+  {
+    slug: 'roman-numeral-converter',
+    name: 'Roman Numeral Converter',
+    shortDescription: 'Convert integers to Roman numerals and Roman numerals back to integers instantly.',
+    seoTitle: 'Roman Numeral Converter — Integers ↔ Roman Numerals Online',
+    seoDescription: 'Free Roman numeral converter. Convert any integer (1–3999) to Roman numerals (I, V, X, L, C, D, M) or decode Roman numerals back to integers instantly.',
+    category: 'text-dev',
+    tags: ['Roman Numerals', 'Converter', 'History', 'Numbers', 'Education'],
+    keywords: ['roman numeral converter', 'integer to roman numerals', 'roman numeral translator', 'roman numerals 1 to 100', 'convert roman numerals online'],
+    icon: 'BookOpen',
+    popular: false,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['number-base-converter', 'morse-code-converter', 'binary-text-converter'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Select the mode: "Integer → Roman" or "Roman → Integer".',
+        'Enter your number or Roman numeral in the input field.',
+        'The converted result appears instantly in the large display below.',
+        'Use the Swap button to reverse direction, pre-loading the output as the new input.',
+        'Click Copy Result to save the converted value to your clipboard.',
+      ],
+      about: `**Roman numerals** are a numeral system originating in ancient Rome, using combinations of seven letters from the Latin alphabet to represent values. Despite being over 2,000 years old, Roman numerals remain in widespread use today for clock faces, copyright dates, movie sequels, Super Bowl numbering, and formal document chapter headings.
+
+**The Seven Roman Numeral Symbols:**
+- **I** = 1
+- **V** = 5
+- **X** = 10
+- **L** = 50
+- **C** = 100 (from Latin *centum*)
+- **D** = 500
+- **M** = 1000 (from Latin *mille*)
+
+**Subtractive Notation Rules:**
+Roman numerals generally use additive notation (III = 3), but four specific subtractive combinations exist to avoid four-character repetition:
+- **IV** = 4 (I before V)
+- **IX** = 9 (I before X)
+- **XL** = 40 (X before L)
+- **XC** = 90 (X before C)
+- **CD** = 400 (C before D)
+- **CM** = 900 (C before M)
+
+**Current Year Examples:**
+- 2024 = MMXXIV (MM=2000, XX=20, IV=4)
+- 2025 = MMXXV (MM=2000, XX=20, V=5)
+- 1999 = MCMXCIX (M=1000, CM=900, XC=90, IX=9)
+
+**Where Roman Numerals Are Used Today:**
+- Clock and watch faces (I–XII)
+- Super Bowl editions (Super Bowl LVIII = 58)
+- Olympic Games editions (Paris 2024 = XXXIII Olympiad)
+- Movie sequels (Rocky IV, Star Wars Episode IX)
+- Copyright dates in film credits and books
+- Monarchs and popes (King Charles III, Pope John Paul II)
+- Outline numbering in legal documents and academic papers`,
+      faqs: [
+        { q: 'What are the basic Roman numeral symbols?', a: 'I=1, V=5, X=10, L=50, C=100, D=500, M=1000. These seven symbols combine to represent any integer from 1 to 3999.' },
+        { q: 'Why does the system end at 3999?', a: 'Standard Roman numerals use at most three consecutive identical symbols (III, XXX, CCC, MMM). Without a symbol for 5000, 4000 (MMMM) would require four Ms, violating the rule.' },
+        { q: 'What is the Roman numeral for the current year?', a: '2024 = MMXXIV and 2025 = MMXXV. Enter the year in the Integer → Roman mode to see the result.' },
+        { q: 'How do you write zero in Roman numerals?', a: 'There is no Roman numeral for zero. The Romans used the word "nulla" (meaning "nothing"). Zero as a mathematical concept was introduced to Europe from Arabic/Indian mathematics centuries later.' },
+        { q: 'What is the largest number expressible in Roman numerals?', a: '3999 (MMMCMXCIX) using standard notation. Some extended systems use an overbar (vinculum) to represent multiples of 1000, extending the range to 3,999,999.' },
+      ],
+    },
+  },
+  {
+    slug: 'stopwatch-timer',
+    name: 'Stopwatch & Countdown Timer',
+    shortDescription: 'Browser-based stopwatch with lap tracking and a configurable countdown timer.',
+    seoTitle: 'Stopwatch & Countdown Timer Online — Free Browser Tool',
+    seoDescription: 'Free online stopwatch and countdown timer. Track time with millisecond precision, record lap times, or set a countdown. Works entirely in your browser — no install needed.',
+    category: 'date-time',
+    tags: ['Stopwatch', 'Timer', 'Countdown', 'Time Tracking', 'Productivity'],
+    keywords: ['stopwatch online', 'countdown timer online', 'free stopwatch', 'online timer with laps', 'browser stopwatch', 'countdown clock'],
+    icon: 'Timer',
+    popular: true,
+    addedAt: '2026-05-01',
+    relatedSlugs: ['timestamp-converter', 'age-calculator', 'cron-expression-builder'],
+    processing: 'local-js',
+    status: 'active',
+    content: {
+      howTo: [
+        'Choose your mode: Stopwatch for counting up, or Countdown for counting down from a set time.',
+        'For Countdown: enter the duration in seconds before starting.',
+        'Press Start to begin timing.',
+        'Press Lap during stopwatch mode to record lap times without stopping the clock.',
+        'Press Pause to pause and Resume to continue from where you left off.',
+        'Press Reset to clear all times and start fresh.',
+      ],
+      about: `The **Stopwatch & Countdown Timer** is a precision time-tracking tool that runs entirely in your browser using the browser's high-resolution performance timer. It supports millisecond-precision stopwatch mode with lap recording and a flexible countdown timer — no installation, no sign-up, no ads.
+
+**Stopwatch Mode:**
+The stopwatch counts upward from 00:00.00. It displays time in MM:SS.cs format (minutes, seconds, centiseconds). The Lap function records the current elapsed time as a snapshot while the clock continues running — useful for timing multiple intervals, athletes' split times, or productivity pomodoro sessions.
+
+**Countdown Timer Mode:**
+Set any duration in seconds (up to 86,400 seconds = 24 hours). The timer counts down to zero and alerts you visually when time expires. Useful for:
+- **Cooking:** Set exact cooking times without touching a phone.
+- **Exercise intervals:** Tabata workouts, rest periods, sets.
+- **Study sessions:** Pomodoro technique (25-minute focus, 5-minute break).
+- **Presentations:** Keep talks on schedule with a visible countdown.
+- **Games:** Chess clocks, trivia rounds, penalty timeouts.
+
+**Technical Implementation:**
+The stopwatch uses requestAnimationFrame for smooth, battery-efficient updates synchronized with the browser's display refresh rate. Time tracking uses Date.now() for monotonic, drift-free elapsed time — not setInterval, which can drift or skip. This ensures accuracy even on slower devices.`,
+      faqs: [
+        { q: 'How accurate is the stopwatch?', a: 'The stopwatch uses requestAnimationFrame and Date.now() for high accuracy, displaying centisecond precision (1/100th of a second). Browser tab background throttling may affect very long-running timers.' },
+        { q: 'Can I use the stopwatch on mobile?', a: 'Yes. The tool is fully responsive and works on iPhone, Android, and tablet browsers. Keep the screen active to prevent background throttling.' },
+        { q: 'Does the countdown timer alarm?', a: 'The timer displays a visual alert ("Time\'s up!") and highlights in red when it reaches zero. For audio alerts, consider enabling your browser\'s notification sounds.' },
+        { q: 'What is the maximum countdown duration?', a: 'You can enter any duration in seconds. The display switches to HH:MM:SS format automatically for durations over one hour.' },
+        { q: 'Can I record multiple lap times?', a: 'Yes. In stopwatch mode, clicking Lap records the current elapsed time without stopping the clock. All laps are listed below the timer.' },
+      ],
+    },
+  },
 ];
 
 export const POPULAR_TOOLS = TOOLS.filter((t) => t.popular);
