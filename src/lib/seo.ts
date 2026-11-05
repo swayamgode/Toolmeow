@@ -19,10 +19,14 @@ export function constructMetadata({
   publishedTime,
 }: MetadataOptions): Metadata {
   const url = canonical || `${siteConfig.url}${path}`;
-  const fullTitle = `${title} | ${siteConfig.name}`;
+  const fullTitle = title.toLowerCase().includes(siteConfig.name.toLowerCase())
+    ? title
+    : `${title} | ${siteConfig.name}`;
 
   return {
-    title: fullTitle,
+    title: {
+      absolute: fullTitle,
+    },
     description,
     alternates: {
       canonical: url,
