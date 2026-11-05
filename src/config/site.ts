@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'ToolMeow',
   shortName: 'ToolMeow',
   description: 'Fast, private, free browser-based tools. Files never leave your device.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://toolmeow.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://toolmeow.in',
   author: 'ToolMeow Team',
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'support@toolmeow.com',
   adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-3027613620365055',
