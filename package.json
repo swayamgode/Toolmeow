@@ -13,6 +13,8 @@
     "validate:registry": "node scripts/validate-registry.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "lucide-react": "^1.66.0",
     "next": "16.4.3",
     "pdf-lib": "^1.17.1",

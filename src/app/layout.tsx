@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import { siteConfig } from '@/config/site';
 
@@ -72,6 +74,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-[#FAFAF9] text-[#0B0B0F]">
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
