@@ -98,3 +98,41 @@ body {
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
+
+/* Custom Minimal Auto-Hiding Scrollbar */
+@layer base {
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease;
+  }
+
+  *:hover {
+    scrollbar-color: rgba(11, 11, 15, 0.25) transparent;
+  }
+
+  /* WebKit (Chrome, Edge, Safari, Opera) */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+  }
+
+  *:hover::-webkit-scrollbar-thumb {
+    background: rgba(11, 11, 15, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(11, 11, 15, 0.45) !important;
+  }
+}
