@@ -104,7 +104,7 @@ export const ToolSearch: React.FC<ToolSearchProps> = ({
       {/* Dialog Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/40 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/40"
           onClick={(e) => {
             if (e.target === e.currentTarget) setIsOpen(false);
           }}
